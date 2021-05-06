@@ -1,24 +1,114 @@
-html, body {
-    min-height: 100%;
-}
 
-body {
+body 
+{
     margin: 0px;
-    background: url(img/sfondo.jpg) #101010 no-repeat center center;
-    background-size: auto;
+    background-size: cover;
     background-attachment: fixed;
-    padding: 50px 0px 100px;
 }
 
-h3 a {
-    padding: 0px 20px 0px 0;
-    font-size: 14px;
-    font-weight: 100;
+.header 
+{   
+    padding: 30px;
+    text-align: center;
+    background: red;
+}
+
+
+.topnav 
+{
+    overflow: hidden;
+    background: green;
+    padding: 20px 20px;
+}
+
+.topnav a 
+{
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    font-size: 24;
     font-style: normal;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 4px;
-    color: #fff;
-    display: inline-block;
+    color: #101010;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
+
+.topnav a:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+
+.left-column 
+{   
+    float: left;
+    border: 1px solid #ccc;
+    background-color: grey;
+    width: 15%;
+    height: 1000px;
+}
+
+.left-column button 
+{
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left-column button i
+{
+    padding-right:10px;
+}
+
+.left-column button a 
+{
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    font-size: 24;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #101010;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+
+.left-column button:hover 
+{
+    background-color: #ddd;
+}
+
+.left-column button.active 
+{
+    background-color: #ccc;
+}
+
+.right-column 
+{
+    float: left;
+    width: 85%;
+    background-color: cyan;
+    padding-left: 20px;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+  }
