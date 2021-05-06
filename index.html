@@ -6,16 +6,23 @@
     <script src="https://kit.fontawesome.com/ad39549f21.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
     <div class = "header">
             <h1><img class = "header-image" src= "img/31756.png" height="70" width="100"></h1>
     </div>
+
+
+
     <div class = "topnav">
         <a href="index.html">Padel Tournaments</a>
         <a href="/Sign-up/index.html" style="float: right;">Sign up</a>
         <a href= "gioco_padel.html" style="float: right;">Il gioco</a> 
         <a href="index.html" style="float: right;">Homepage</a>  
     </div>
-    <div class = "left-column">
+
+
+
+    <div class = "tab">
         <button class = "tablinks">
             <a href="/Tournamets"> <i class="fas fa-trophy"></i> Tournaments </a>
         </button>
@@ -32,11 +39,24 @@
             <a href="/News Feed"> <i class="fas fa-newspaper"></i> News Feed </a>
         </button>
     </div>
-    <div class = "right-column">
-        <div class="tabcontent">
+
+  
+
+    <div class = "content">
+        <div id="London" class="tabcontent">
             <h3>London</h3>
             <p>London is the capital city of England.</p>
-        </div>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
     </div>
 <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> -->
 </body>

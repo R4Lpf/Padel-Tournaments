@@ -1,4 +1,9 @@
 
+html, body
+{
+    height: 100%;
+}
+
 body 
 {
     margin: 0px;
@@ -42,16 +47,17 @@ body
     color: black;
 }
 
-.left-column 
+.tab
 {   
     float: left;
     border: 1px solid #ccc;
     background-color: grey;
     width: 15%;
-    height: 1000px;
+    height: 100%;
+    
 }
 
-.left-column button 
+.tab button 
 {
     display: block;
     background-color: inherit;
@@ -65,12 +71,12 @@ body
     transition: 0.3s;
 }
 
-.left-column button i
+.tab button i
 {
     padding-right:10px;
 }
 
-.left-column button a 
+.tab button a 
 {
     float: left;
     display: block;
@@ -86,22 +92,25 @@ body
 }
 
 
-.left-column button:hover 
+.tab button:hover 
 {
     background-color: #ddd;
 }
 
-.left-column button.active 
+.tab button.active 
 {
     background-color: #ccc;
 }
 
-.right-column 
+.content
 {
-    float: left;
-    width: 85%;
-    background-color: cyan;
-    padding-left: 20px;
+    float: right;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 83.8%;
+    border-left: none;
+    height: 100%;
+    background: mediumturquoise;
 }
 
 .tabcontent {
