@@ -7,11 +7,10 @@
 </head>
 <body>
     <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
+
     <div class = "header">
             <h1><img class = "header-image" src= "img/31756.png" height="70" width="100"></h1>
     </div>
-
-
 
     <div class = "topnav">
         <a href="index.html">Padel Tournaments</a>
@@ -20,44 +19,87 @@
         <a href="index.html" style="float: right;">Homepage</a>  
     </div>
 
-
-
     <div class = "tab">
-        <button class = "tablinks">
-            <a href="/Tournamets"> <i class="fas fa-trophy"></i> Tournaments </a>
+        <button class = "tablinks" onclick="openTab(event, 'Tournaments')" id="defaultOpen">
+            <a> <i class="fas fa-trophy"></i> Tournaments </a>
         </button>
-        <button class = "tablinks">
-            <a href="/Ranking"> <i class="fas fa-medal"></i> Ranking</a>
+        <button class = "tablinks" onclick="openTab(event, 'Ranking')">
+            <a> <i class="fas fa-medal"></i> Ranking</a>
         </button>
-        <button class = "tablinks">
-            <a href="/My profile"> <i class="fas fa-user"></i> My profile </a>
+        <button class = "tablinks" onclick="openTab(event, 'My profile')">
+            <a> <i class="fas fa-user"></i> My profile </a>
         </button>
-        <button class = "tablinks">
-            <a href="/Events"> <i class="fas fa-calendar-alt"></i> Events</a>
+        <button class = "tablinks" onclick="openTab(event, 'Events')">
+            <a> <i class="fas fa-calendar-alt"></i> Events</a>
         </button>
-        <button class = "tablinks">
-            <a href="/News Feed"> <i class="fas fa-newspaper"></i> News Feed </a>
+        <button class = "tablinks" onclick="openTab(event, 'News Feed')">
+            <a> <i class="fas fa-newspaper"></i> News Feed </a>
         </button>
     </div>
-
-  
 
     <div class = "content">
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
+        <div id="Tournaments" class="tabcontent">
+            <div class = "list -four">
+                <div class = "card">
+                    <div class = "cardheader">
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                    </div>
+                    <div class = "cardbody">
+                        <div class = "cardtitle">
+                            <h2>Tournaments</h2>
+                        </div>
+                        <ul class = "carddetails">
+                            <h5>Title description, Dec 7, 2017</h5>
+                            <p>Some text..</p>
+                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        </ul>
+                        <div class = "action">
+                            <a class="btn btn-block btn-default" onclick="viewPage()">View</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "cardheader">
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                    </div>
+                    <div class = "cardbody">
+                        <div class = "cardtitle">
+                            <h2>Tournaments</h2>
+                        </div>
+                        <ul class = "carddetails">
+                            <h5>Title description, Dec 7, 2017</h5>
+                            <p>Some text..</p>
+                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div id="Ranking" class="tabcontent">
+            <h2>Ranking</h2>
             <p>London is the capital city of England.</p>
-          </div>
+        </div>
+        <div id="My profile" class="tabcontent">
+            <h2>My profile</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div id="Events" class="tabcontent">
+            <h2>Events</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+        <div id="News Feed" class="tabcontent">
+            <h2>News Feed</h2>
+            <p>London is the capital city of England.</p>
+        </div>
           
-          <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p> 
-          </div>
-          
-          <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-          </div>
+         
     </div>
+    <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
+    <script src="/card-sites/viewCard.js"></script>
 <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> -->
 </body>
 </html>
