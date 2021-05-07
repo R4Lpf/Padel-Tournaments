@@ -6,26 +6,28 @@ html, body
 
 body
 {
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+    font-size: 16px;
     margin: 0px;
     background-size: cover;
     background-attachment: fixed;
 }
-
-/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* INIZIO HEADER */
 
 .header
 {
     padding: 30px;
     text-align: center;
-    background: red;
+    background: #272a33;
 }
 
 
 .topnav
 {
     overflow: hidden;
-    background: green;
+    background: grey;
     padding: 20px 20px;
 }
 
@@ -51,7 +53,8 @@ body
 }
 
 /* FINE HEADER */
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* INIZIO TAB A SINISTRA DELLA PAGINA */
 
 .tab
@@ -111,6 +114,7 @@ body
 
 /* FINE TAB A SINISTRA DELLA PAGINA */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* INIZIO CONTENUTO A DESTRA DELLA PAGINA */
 
 .content
@@ -121,18 +125,9 @@ body
     width: 85%;
     border-left: none;
     height: 100%;
-    background: mediumturquoise;
+    background: #ddd;
 }
 
-.tabcontent
-{
-    float: left;
-    /* padding: 0px 12px;
-    border: 1px solid #ccc; */
-    width: 100%;
-    border-left: none;
-    height: 300px;
-}
 
 .list
 {   
@@ -141,67 +136,130 @@ body
     grid-gap: 24px 16px;
 }
 
+/* INIZIO TOURNAMENTS CONTENT */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 .list.-four
 {   
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .card
 {
     background-color: white;
-    padding: 20px;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 .fakeimg 
 {
     background-color: #aaa;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+
+.cardtitle
+{
+    padding-left: 40px;
+}
+
+.carddetails {
+    padding-left: 40px;
+    margin-bottom: 0;
+    list-style-type: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.sap i
+{
+    padding-right: 3px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.carddetails>li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+
+.action {
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* background: brown; */
+}
+
 
 .btn {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.04em;
-}
-
-.btn {
-    display: inline-block;
     margin-bottom: 0;
-    font-weight: normal;
     text-align: center;
-    vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
     font-size: 14px;
-    line-height: 1.428571429;
-    border-radius: 2px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    line-height: 4;
+    border-radius: 10px;
     user-select: none;
 }
 
 .btn:not(.btn-link,.btn-outline-default) {
-    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
-    /* -webkit-box-shadow: 0 1px 1px 0 rgb(0 0 0 / 30%); */
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 30%);
 }
 
 .btn-block {
     display: block;
-    width: 100%;
 }
+
 .btn-default {
     color: #fff;
     background-color: #454d60;
     border-color: #454d60;
 }
 
+/* FINE TOURNAMENTS CONTENT */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* INIZIO RANKING CONTENT */
+
+
+/* FINE RANKING CONTENT */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* INIZIO NEWS CONTENT */
+
+.list.-three
+{   
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* FINE NEWS CONTENT */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .tab, .tabcontent {
