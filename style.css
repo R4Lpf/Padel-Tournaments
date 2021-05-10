@@ -338,6 +338,23 @@ li {
         width: 100%;
     }
   }
+  @media screen and (max-width: 1500px) {
+    .list.-four {
+        float: none;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        padding-right: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .list.-four {
+        float: none;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        padding-right: 100px;
+    }
+  }
 
   @media screen and (max-width: 1500px) {
     .list.-three {
@@ -347,3 +364,4 @@ li {
         padding-right: 100px;
     }
   }
+
