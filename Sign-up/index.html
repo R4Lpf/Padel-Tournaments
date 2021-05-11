@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-<html lang=it>
+<html lang="en" >
 <head>
-    <title>bruh</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Padel Tournaments</title>
+    <script src="https://kit.fontawesome.com/ad39549f21.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <meta charset="UTF-8">
+  <title>CodePen - Sign-Up/Login Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
 </head>
-<body bgcolor="grey">
-    <h1 align="center">bruh</h1>
-    <a href="index.html">bruh</a>  <a href= "gioco_padel.html">Il gioco</a>
-    <hr size=”1″ width=”300″ color="black">
-    <p>bruh bruh bruh bruh bruh bruh</p>
+<body>
+<script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
+
+    <div class = "header">
+            <h1><img class = "header-image" src= "/img/31756.png" height="70" width="100"></h1>
+    </div>
+
+    <div class = "topnav">
+        <a href="/index.html">Padel Tournaments</a>
+        <a href="/Sign-up/index.html" style="float: right;">Sign up</a>
+        <a href= "/gioco_padel.html" style="float: right;">Il gioco</a> 
+        <a href="/index.html" style="float: right;">Homepage</a>  
+    </div>
+<div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Registrati</a></li>
+        <li class="tab"><a href="#login">Accedi</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Completa i campi</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Nome<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Cognome<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Username<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Imposta una Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Conferma</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Bentornato!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Password Dimenticata?</a></p>
+          
+          <button class="button button-block"/>Accedi</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
