@@ -154,24 +154,6 @@ body
     grid-gap: 24px 16px;
 }
 
-@media (max-width: 767px)
-.content {
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-@media (max-width: 991px)
-.content {
-    margin-top: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-.contentt {
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
 
 /* INIZIO TOURNAMENTS CONTENT */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -448,14 +430,14 @@ li {
     }
   }
 
-<<<<<<< HEAD
+
   @media screen and (max-width: 900px) {
     .list.-three {
         float: none;
         grid-template-columns: 1fr;
     }
   }
-=======
+
 /* questi sono gli stili copiati per la classifica*/
 body {
     font-family: "Lato", Arial, sans-serif;
@@ -516,4 +498,3 @@ tbody tr:hover {
 td.posto {
   text-transform: capitalize;
 }
->>>>>>> cc02b373313e8c81952480a07f84dd9819a17ef4
