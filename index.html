@@ -3,6 +3,8 @@
 <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Padel Tournaments</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
     <script src="https://kit.fontawesome.com/ad39549f21.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -10,6 +12,7 @@
 </head>
 <body>
     <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
+
 
     <div class = "header">
             <h1><img class = "header-image" src= "img/31756.png" height="70" width="100"></h1>
@@ -24,17 +27,22 @@
 
     <div class = "tab">
         <button class = "tablinks" onclick="openTab(event, 'Tournaments')" id="defaultOpen">
-            <a> <i class="fas fa-trophy"></i> Tournaments </a>
+            <a> <i class="fas fa-trophy"></i> Tornei </a>
         </button>
         <button class = "tablinks" onclick="openTab(event, 'Ranking')">
-            <a> <i class="fas fa-medal"></i> Ranking</a>
+            <a> <i class="fas fa-medal"></i> Classifiche</a>
         </button>
         <button class = "tablinks" onclick="openTab(event, 'My profile')">
+<<<<<<< HEAD
             <a> <i class="fas fa-user"></i> My profile </a>
         </button>
         <!-- <button class = "tablinks" onclick="openTab(event, 'Events')">
             <a> <i class="fas fa-calendar-alt"></i> Events</a>
         </button> -->
+=======
+            <a> <i class="fas fa-user"></i> Il mio profilo </a>
+        </button>
+>>>>>>> cc02b373313e8c81952480a07f84dd9819a17ef4
         <button class = "tablinks" onclick="openTab(event, 'News')">
             <a> <i class="fas fa-newspaper"></i> News </a>
         </button>
@@ -42,57 +50,254 @@
 
     <div class = "content">
         <div id="Tournaments" class="tabcontent">
+<<<<<<< HEAD
             <div class = "create-tournament">
                 <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
                 <button class = "tablinks">
                     <a onclick=""> Create Tournament <i class="fas fa-plus"></i> </a>
                 </button>
             </div>
+=======
+          <div class = "create-tournament">
+            <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
+            <button class = "tablinks">
+                <a onclick=""> Create Tournament <i class="fas fa-plus"></i> </a>
+            </button>
+          </div>
+>>>>>>> cc02b373313e8c81952480a07f84dd9819a17ef4
             <div class = "list -four">
                 <div class = "card">
                     <div class = "cardheader">
-                        <div class="fakeimg"></div>
+                        <img src="/img/millenium estoril.jpg" alt="Millennium Estoril Open" height="200px" width="100%">
                     </div>
                     <div class = "cardbody">
                         <div class = "cardtitle">
-                            <h2>Estrella Damm Alicante Open 2021</h2>
+                            <h2>Millennium Estoril Open</h2>
                         </div>
                         <ul class = "carddetails">
-                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Aicante</li> 
-                            <li class = "sep"><i class="fas fa-calendar-alt"></i> From 18/04/2021 to 25/04/2021</li>
-                            <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Category: Female and Male</li>
+                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Estoril, Portogallo</li> 
+                            <li class = "sep"><i class="fas fa-calendar-alt"></i> 26/04/2021</li>
+                            <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">View</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
                         </div>
                     </div>
                 </div>
 
                 <div class = "card">
                     <div class = "cardheader">
-                        <div class="fakeimg"></div>
+                        <img src="/img/mutua opening madrid.jpg" alt="Mutua Madrid Open" height="200px" width="100%">
                     </div>
                     <div class = "cardbody">
                         <div class = "cardtitle">
-                            <h2>Adeslas Madrid Open 2021</h2>
+                            <h2>Mutua Madrid Open</h2>
                         </div>
                         <ul class = "carddetails">
-                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Madrid</li> 
-                            <li class = "sep"><i class="fas fa-calendar-alt"></i> From 04/04/2021 to 11/04/2021</li>
-                            <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Category: Female and Male</li>
+                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Madrid, Spagna</li> 
+                            <li class = "sep"><i class="fas fa-calendar-alt"></i> 02/05/2021</li>
+                            <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">View</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
+=======
+
+                <div class = "card">
+                    <div class = "cardheader">
+                        <img src="/img/internazionali bnl roma.jpg" alt="Internazionali BNL d'Italia" height="200px" width="100%">
+                    </div>
+                    <div class = "cardbody">
+                        <div class = "cardtitle">
+                            <h2>Internazionali BNL d'Italia</h2>
+                        </div>
+                        <ul class = "carddetails">
+                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Roma, Italia</li> 
+                            <li class = "sep"><i class="fas fa-calendar-alt"></i> 09/05/2021</li>
+                            <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
+                        </ul>
+                        <div class = "action">
+                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "card">
+                    <div class = "cardheader">
+                        <img src="/img/gonet geneva.jpg" alt="Gonet Geneva Open" height="200px" width="100%">
+                    </div>
+                    <div class = "cardbody">
+                        <div class = "cardtitle">
+                            <h2>Gonet Geneva Open</h2>
+                        </div>
+                        <ul class = "carddetails">
+                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Ginevra, Svizzera</li> 
+                            <li class = "sep"><i class="fas fa-calendar-alt"></i> 16/05/2021</li>
+                            <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
+                        </ul>
+                        <div class = "action">
+                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                        </div>
+                    </div>
+                </div>
+
+                           
+                
+
+>>>>>>> cc02b373313e8c81952480a07f84dd9819a17ef4
             </div>
+               
+        </div>
+    
+        <div id="Ranking" class="tabcontent">
+            <div class="container">
+                <header>
+                  <h1>Ranking italiano FIT Padel</h1>
+                </header>
+                <div class="wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Posto</th>
+                        <th>Giocatore</th>
+                        <th>Punti</th>
+                        <th>Anni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="posto">1</td>
+                        <td class="giocatore">Marcello Capitani</td>
+                        <td class="punti">1460</td>
+                        <td class="anni">46</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="posto">2</td>
+                        <td class="giocatore">Simone Cremona</td>
+                        <td class="punti">1340</td>
+                        <td class="anni">32</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="rank">3</td>
+                        <td class="team">Portugal</td>
+                        <td class="points">1245</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">4</td>
+                        <td class="team">Brazil</td>
+                        <td class="points">1210</td>
+                        <td class="up-down">+2</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">5</td>
+                        <td class="team">Colombia</td>
+                        <td class="points">1186</td>
+                        <td class="up-down">-1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">6</td>
+                        <td class="team">Uruguay</td>
+                        <td class="points">1181</td>
+                        <td class="up-down">-1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">7</td>
+                        <td class="team">Argentina</td>
+                        <td class="points">1178</td>
+                        <td class="up-down">-1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">8</td>
+                        <td class="team">Switzerland</td>
+                        <td class="points">1161</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">9</td>
+                        <td class="team">Italy</td>
+                        <td class="points">1115</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">10</td>
+                        <td class="team">Greece</td>
+                        <td class="points">1082</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">11</td>
+                        <td class="team">England</td>
+                        <td class="points">1043</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">12</td>
+                        <td class="team">Belgium</td>
+                        <td class="points">1039</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">13</td>
+                        <td class="team">Chile</td>
+                        <td class="points">1037</td>
+                        <td class="up-down">+1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">14</td>
+                        <td class="team">USA</td>
+                        <td class="points">1015</td>
+                        <td class="up-down">-1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">15</td>
+                        <td class="team">Netherlands</td>
+                        <td class="points">967</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">16</td>
+                        <td class="team">France</td>
+                        <td class="points">935</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">17</td>
+                        <td class="team">Ukraine</td>
+                        <td class="points">913</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">18</td>
+                        <td class="team">Russia</td>
+                        <td class="points">903</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">19</td>
+                        <td class="team">Mexico</td>
+                        <td class="points">877</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">20</td>
+                        <td class="team">Croatia</td>
+                        <td class="points">871</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
         </div>
 
-        <div id="Ranking" class="tabcontent">
-           
-        </div>
         <div id="My profile" class="tabcontent">
+<<<<<<< HEAD
             <h2>My profile</h2>
             <p>London is the capital city of England.</p>
         </div>
@@ -100,6 +305,12 @@
             <h2>Events</h2>
             <p>London is the capital city of England.</p>
         </div> -->
+=======
+          <h2>My profile</h2>
+          <p>London is the capital city of England.</p>
+        </div>
+
+>>>>>>> cc02b373313e8c81952480a07f84dd9819a17ef4
         <div id="News" class="tabcontent">
             <div class = "list -three">
 
@@ -157,7 +368,7 @@
                         </div>
                         <div class = "paragraph">
                             <p>
-                                 Si parla già di vera e propria padel o paddle mania, il gioco molto simile al tennis che proviene dal Messico che sta facendo sempre più proseliti anche in Italia seppur con un certo ritardo rispetto ad altri paesi: i motivi sono presto spiegati, il successo di questo...                            
+                                Si parla già di vera e propria padel o paddle mania, il gioco molto simile al tennis che proviene dal Messico che sta facendo sempre più proseliti anche in Italia seppur con un certo ritardo rispetto ad altri paesi: i motivi sono presto spiegati, il successo di questo...                            
                             </p>
                         </div>
                         <div class = "leggi-tutto">
@@ -168,9 +379,11 @@
 
             </div>
         </div>
-          
-         
-    </div>
+        
+
+      
+    
+
     <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
     <script src="/card-sites/viewCard.js"></script>
 <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> -->
