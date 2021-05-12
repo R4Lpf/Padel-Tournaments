@@ -194,6 +194,19 @@ body
     background-color: #ccc;
 }
 
+
+.close-button
+{ 
+    font-size: 26px;
+    color: crimson;
+    cursor: pointer; 
+}
+
+.CT-content 
+{ 
+    background-color:#ccc;  
+}
+
 .list.-four
 {   
     padding-top: 20px;

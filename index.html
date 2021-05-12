@@ -44,10 +44,83 @@
 
             <div class = "create-tournament">
                 <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
-                <button class = "tablinks">
+                <button class = "tablinks -p" id="panel1">
                     <a onclick=""> Create Tournament <i class="fas fa-plus"></i> </a>
                 </button>
+                <div class="CT-content" id="panel1C">
+                    <form action="create-tournament.php" method="post">
+                        <div class="top-row">
+                            <div class="field-wrap">
+                              <label>
+                                Nome Torneo <span class="req">*</span>
+                              </label>
+                              <input type="text" required autocomplete="off" />
+                            </div>
+                        
+                            <div class="field-wrap">
+                              <label>
+                                Paese <span class="req">*</span>
+                              </label>
+                              <input type="text"required autocomplete="off"/>
+                            </div>
+                          </div>
+                
+                          <div class="field-wrap">
+                            <label>
+                              Città<span class="req">*</span>
+                            </label>
+                            <input type="text"required autocomplete="off"/>
+                          </div>
+                
+                          <div class="field-wrap">
+                            <label>
+                              Data<span class="req">*</span>
+                            </label>
+                            <input type="date" required autocomplete="off"/>
+                          </div>
+                          
+                          <div class="field-wrap">
+                            <label>
+                              Categoria<span class="req">*</span>
+                            </label>
+                            <input type="radio" name="gender" value="female">Femminile
+                            <input type="radio" name="gender" value="male">Maschile
+                            <input type="radio" name="gender" value="other">Femminile e Maschile
+                          </div>
+                          
+                          <div class="field-wrap">
+                            <label>
+                              Descrizione 
+                            </label>
+                            <input type="text"/>
+                          </div>
+
+                          <button type="submit" class="button button-block"/>Conferma</button>                
+                    </form>
+                    Nome TORNEO
+                    Città e Paese
+                    Data
+                    Categoria
+                    <span id="panel1Close" class= "close-button">
+                        <i class="far fa-window-close"></i>
+                    </span>
+                </div>
             </div>
+
+            <script>
+                $('#panel1C').slideUp(100);
+                $('#panel1C').eq(1).slideDown(600);
+                //for collapsing second part of an accordion
+
+                $('.tablinks').click(function() {//open
+                var takeID = $(this).attr('id');//takes id from clicked ele
+                $('#'+takeID+'C').slideDown(600);//show's clicked ele's id macthed div
+                });
+                $('span').click(function() {//close
+                var takeID = $(this).attr('id').replace('Close','');//strip close from id
+                $('#'+takeID+'C').slideUp(600);//hide clicked close button's panel
+                });
+            </script>
 
             <div class = "list -four">
                 <div class = "card">
