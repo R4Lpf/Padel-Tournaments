@@ -48,20 +48,21 @@
                     <a onclick=""> Create Tournament <i class="fas fa-plus"></i> </a>
                 </button>
                 <div class="CT-content" id="panel1C">
+
                     <form action="create-tournament.php" method="post">
                         <div class="top-row">
                             <div class="field-wrap">
                               <label>
                                 Nome Torneo <span class="req">*</span>
                               </label>
-                              <input type="text" required autocomplete="off" />
+                              <input type="text" required autocomplete="off" name="nome-torneo"/>
                             </div>
                         
                             <div class="field-wrap">
                               <label>
                                 Paese <span class="req">*</span>
                               </label>
-                              <input type="text"required autocomplete="off"/>
+                              <input type="text"required autocomplete="off" name="paese"/>
                             </div>
                           </div>
                 
@@ -69,30 +70,30 @@
                             <label>
                               Città<span class="req">*</span>
                             </label>
-                            <input type="text"required autocomplete="off"/>
+                            <input type="text"required autocomplete="off" name="città"/>
                           </div>
                 
                           <div class="field-wrap">
                             <label>
                               Data<span class="req">*</span>
                             </label>
-                            <input type="date" required autocomplete="off"/>
+                            <input type="date" required autocomplete="off" name="data"/>
                           </div>
                           
                           <div class="field-wrap">
                             <label>
                               Categoria<span class="req">*</span>
                             </label>
-                            <input type="radio" name="gender" value="female">Femminile
-                            <input type="radio" name="gender" value="male">Maschile
-                            <input type="radio" name="gender" value="other">Femminile e Maschile
+                            <input type="radio" name="categoria" value="female">Femminile
+                            <input type="radio" name="categoria" value="male">Maschile
+                            <input type="radio" name="categoria" value="other">Femminile e Maschile
                           </div>
                           
                           <div class="field-wrap">
                             <label>
                               Descrizione 
                             </label>
-                            <input type="text"/>
+                            <input type="text" name="descrizione"/>
                           </div>
 
                           <button type="submit" class="button button-block"/>Conferma</button>                
@@ -101,6 +102,9 @@
                     Città e Paese
                     Data
                     Categoria
+
+                    <div id=serializearray>1234</div>  
+
                     <span id="panel1Close" class= "close-button">
                         <i class="far fa-window-close"></i>
                     </span>
@@ -120,12 +124,24 @@
                 var takeID = $(this).attr('id').replace('Close','');//strip close from id
                 $('#'+takeID+'C').slideUp(600);//hide clicked close button's panel
                 });
+
+                $(function() {
+                  var update = function() {
+                      $('#serializearray').text(        
+                          JSON.stringify($('form').serializeArray())
+                      );
+                    };
+                    update();
+                    $('form').change(update);
+                })
             </script>
 
             <div class = "list -four">
                 <div class = "card">
                     <div class = "cardheader">
-                        <img src="/img/millenium estoril.jpg" alt="Millennium Estoril Open" height="200px" width="100%">
+                        <div class = "fill">
+                          <img src="/img/millenium estoril.jpg" alt="Millennium Estoril Open" height = "250px" width="100%">
+                        </div>
                     </div>
                     <div class = "cardbody">
                         <div class = "cardtitle">
@@ -144,7 +160,9 @@
 
                 <div class = "card">
                     <div class = "cardheader">
-                        <img src="/img/mutua opening madrid.jpg" alt="Mutua Madrid Open" height="200px" width="100%">
+                        <div class = "fill">
+                          <img src="/img/mutua opening madrid.jpg" alt="Mutua Madrid Open" height = "250px" width="100%">
+                        </div>
                     </div>
                     <div class = "cardbody">
                         <div class = "cardtitle">
@@ -164,7 +182,9 @@
 
                 <div class = "card">
                     <div class = "cardheader">
-                        <img src="/img/internazionali bnl roma.jpg" alt="Internazionali BNL d'Italia" height="200px" width="100%">
+                        <div class="fill">
+                          <img src="/img/internazionali bnl roma.jpg" alt="Internazionali BNL d'Italia" height = "250px" width="100%">
+                        </div>
                     </div>
                     <div class = "cardbody">
                         <div class = "cardtitle">
@@ -183,7 +203,9 @@
 
                 <div class = "card">
                     <div class = "cardheader">
-                        <img src="/img/gonet geneva.jpg" alt="Gonet Geneva Open" height="200px" width="100%">
+                        <div class="fill">
+                          <img src="/img/gonet geneva.jpg" alt="Gonet Geneva Open" height = "250px" width="100%">
+                        </div>
                     </div>
                     <div class = "cardbody">
                         <div class = "cardtitle">
@@ -381,7 +403,7 @@
                 <div class = "newscard">
                     <div class = "cardheader">
                         <div class="fill">
-                            <img src="https://palalocapadel.club/wp-content/uploads/2018/11/differenze-tra-padel-tennis-e-squash-400x250.jpg" alt="differences">
+                            <img src="https://palalocapadel.club/wp-content/uploads/2018/11/differenze-tra-padel-tennis-e-squash-400x250.jpg" alt="differences" >
                         </div>
                     </div>
                     <div class = "cardbody">
