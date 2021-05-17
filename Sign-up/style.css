@@ -14,40 +14,48 @@ body
 }
 /* INIZIO HEADER */
 
+
 .header
 {
     padding: 30px;
     text-align: center;
-    background: #272a33;
+    background: #22356d;
 }
 
 
 .topnav
 {
     overflow: hidden;
-    background: grey;
-    padding: 20px 20px;
+    background: #69dfe2;
+    padding: 20px 20px ;
+    
 }
 
 .topnav a
 {
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    font-weight: bold;
     float: left;
     display: block;
     padding: 14px 16px;
-    font-size: 24;
+    font-size: 16px;
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: #22356d;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    border-bottom: thick  solid  #69dfe2;
+    
 }
 
 .topnav a:hover
 {
-    background-color: #ddd;
-    color: black;
+    transition: 0.3s;
+  
+    border-bottom: thick solid #22356d;
+    
 }
 
 /* FINE HEADER */
@@ -64,11 +72,11 @@ body
   
   a {
     text-decoration: none;
-    color: #1ab188;
+    color: #438f7b;
     transition: .5s ease;
   }
   a:hover {
-    color: #1ab188;
+    color: #438f7b;
   }
   
   .form {
@@ -104,11 +112,11 @@ body
     transition: .5s ease;
   }
   .tab-group li a:hover {
-    background: #1ab188;
+    background: #438f7b;
     color: #ffffff;
   }
   .tab-group .active a {
-    background: #1ab188;
+    background: #438f7b;
     color: #ffffff;
   }
   
@@ -129,7 +137,6 @@ body
     left: 13px;
     color: rgba(255, 255, 255, 0.5);
     transition: all 0.25s ease;
-    -webkit-backface-visibility: hidden;
     pointer-events: none;
     font-size: 22px;
   }

@@ -37,21 +37,21 @@
         <div id="signup">   
           <h1>Completa i campi</h1>
           
-          <form action="/singup.php" method="post">
+          <form action="/Sign-up/singup.php" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
               <label>
                 Nome<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" required autocomplete="off" name="nome"/>
             </div>
         
             <div class="field-wrap">
               <label>
                 Cognome<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input type="text"required autocomplete="off" name="cognome"/>
             </div>
           </div>
 
@@ -59,27 +59,42 @@
             <label>
               Username<span class="req">*</span>
             </label>
-            <input type="text"required autocomplete="off"/>
+            <input type="text"required autocomplete="off" name="username"/>
           </div>
 
           <div class="field-wrap">
             <label>
               Email<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input type="email"required autocomplete="off" name="email"/>
           </div>
           
           <div class="field-wrap">
             <label>
               Imposta una Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input type="password"required autocomplete="off" name="password"/>
           </div>
           
-          <button type="submit" class="button button-block"/>Conferma</button>
+          <button type="submit" name="submit" id="submit" value="Submit" class="button button-block">Conferma</button>
           
           </form>
 
+          <div id=serializearray>1234</div>  
+
+          <script>
+            $(function() {
+              var update = function() {
+                  $('#serializearray').text(        
+                      JSON.stringify($('form').serializeArray())
+                  );
+                };
+                update();
+                $('form').change(update);
+            })
+
+                          
+        </script>
         </div>
         
         <div id="login">   
@@ -103,7 +118,7 @@
           
           <p class="forgot"><a href="#">Password Dimenticata?</a></p>
           
-          <button class="button button-block"/>Accedi</button>
+          <button class="button button-block">Accedi</button>
           
           </form>
 
