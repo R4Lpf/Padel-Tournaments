@@ -5,8 +5,7 @@
     <title>Padel Tournaments</title>
     <script src="https://kit.fontawesome.com/ad39549f21.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
 <body>
     <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
@@ -17,10 +16,10 @@
     </div>
 
     <div class = "topnav">
-        <a href="index.html"><img src="/img/NEW TITLE(1).png"></a>
-        <a href="/Sign-up/index.html" style="float: right;"> <img src="/img/Sign Up.png"></a>
-        <a href= "gioco_padel.html" style="float: right;"><img src="/img/Il Gioco.png"></a> 
-        <a href="index.html" style="float: right;"><img src="/img/homepage.png"></a>  
+        <a href="index.html">Padel Tournaments</a>
+        <a href="/Sign-up/index.html" style="float: right;">Sign Up</a>
+        <a href= "gioco_padel.html" style="float: right;">Il Gioco</a> 
+        <a href="index.html" style="float: right;">Homepage</a>  
     </div>
 
     <div class = "tab">
@@ -148,7 +147,7 @@
                             <h2>Millennium Estoril Open</h2>
                         </div>
                         <ul class = "carddetails">
-                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Estoril, Portogallo</li> 
+                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Estoril, Portogallo </li> 
                             <li class = "sep"><i class="fas fa-calendar-alt"></i> 26/04/2021</li>
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
@@ -188,7 +187,7 @@
                     </div>
                     <div class = "cardbody">
                         <div class = "cardtitle">
-                            <h2>Internazionali BNL d'Italia</h2>
+                            <h2>Internaz. BNL d'Italia</h2>
                         </div>
                         <ul class = "carddetails">
                             <li class = "sap"><i class="fas fa-map-marker-alt"></i> Roma, Italia</li> 
@@ -228,10 +227,87 @@
         </div>
     
         <div id="Ranking" class="tabcontent">
-            <div class="container">
-                <header>
-                  <h1>Ranking italiano FIT Padel</h1>
-                </header>
+            <div class="list -two">
+                
+                
+                <div class="wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Giocatore</th>
+                        <th>Posizione</th>
+                        <th>Anni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="posto"> <img src="https://www.worldpadeltour.com/media-content/2016/06/marcelo-capitani-MARCELO_CAPITANI-220x260.jpg"></td>
+                        <td class="giocatore">Marcello Capitani</td>
+                        <td class="punti">1</td>
+                        <td class="anni">46</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="posto"><img src="https://padelpaddle.com/wp-content/uploads/2018/02/padelpaddle-cremona-copertina.jpg"></td>
+                        <td class="giocatore">Simone Cremona</td>
+                        <td class="punti">2</td>
+                        <td class="anni">32</td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="rank">3</td>
+                        <td class="team">Portugal</td>
+                        <td class="points">1245</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">4</td>
+                        <td class="team">Brazil</td>
+                        <td class="points">1210</td>
+                        <td class="up-down">+2</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">5</td>
+                        <td class="team">Colombia</td>
+                        <td class="points">1186</td>
+                        <td class="up-down">-1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">6</td>
+                        <td class="team">Uruguay</td>
+                        <td class="points">1181</td>
+                        <td class="up-down">-1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">7</td>
+                        <td class="team">Argentina</td>
+                        <td class="points">1178</td>
+                        <td class="up-down">-1</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">8</td>
+                        <td class="team">Switzerland</td>
+                        <td class="points">1161</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">9</td>
+                        <td class="team">Italy</td>
+                        <td class="points">1115</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      <tr>
+                        <td class="rank">10</td>
+                        <td class="team">Greece</td>
+                        <td class="points">1082</td>
+                        <td class="up-down">0</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+
                 <div class="wrapper">
                   <table>
                     <thead>
@@ -357,7 +433,7 @@
                             </p>
                         </div>
                         <div class = "leggi-tutto">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                            <a href="/card-sites/differenze.html" class="btn btn-block btn-default" onclick="viewPage()">Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
                         </div>
                     </div>
                 </div>

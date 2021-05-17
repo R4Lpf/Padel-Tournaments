@@ -40,7 +40,7 @@ body
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #101010;
+    color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -64,11 +64,11 @@ body
   
   a {
     text-decoration: none;
-    color: #438f7b;
+    color: #1ab188;
     transition: .5s ease;
   }
   a:hover {
-    color: #438f7b;
+    color: #1ab188;
   }
   
   .form {
@@ -104,11 +104,11 @@ body
     transition: .5s ease;
   }
   .tab-group li a:hover {
-    background: #438f7b;
+    background: #1ab188;
     color: #ffffff;
   }
   .tab-group .active a {
-    background: #438f7b;
+    background: #1ab188;
     color: #ffffff;
   }
   
