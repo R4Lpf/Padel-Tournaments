@@ -20,7 +20,7 @@
 
     $query = "INSERT INTO cardstornei (name, country, city, date, category, image, description) VALUES ('$tournament' , '$country' , '$city', '$date', '$category', '$image', '$description' )";
     $result = pg_query($con ,$query);
-    header("Location: /index.html");
+    header("Location: /card.php");
     
 
   }
