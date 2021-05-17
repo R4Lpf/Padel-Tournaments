@@ -7,7 +7,6 @@ html, body
 body
 {
     font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
-   
     margin: 0px;
     background-size: cover;
     background-attachment: fixed;
@@ -70,7 +69,7 @@ body
     /* border: 1px solid #ccc; */
     background-color: #22356d;
     width: 15%;
-    height: 100%;
+    height:inherit;
     
 }
 
@@ -132,7 +131,6 @@ body
     border: 1px solid #ccc; */
     width: 85%;
     border-left: none;
-    height: 100%;
     background: #ddd;
 }
 
@@ -143,7 +141,6 @@ body
     border: 1px solid #ccc; */
     width: 100%;
     border-left: none;
-    height: 100%;
     background: #ddd;
 
 }
@@ -211,13 +208,18 @@ body
     cursor: pointer; 
 }
 
-.CT-content 
-{ 
-    background-color:#ccc;  
-}
 
 .list.-four
 {   
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.list.-php
+{  
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;

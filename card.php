@@ -254,55 +254,61 @@
               </h1>
             </div>
 
+    
+
+
+            <div class = "list -php">
+
+            <?php
+
+                $host = 'localhost';
+                $user = 'postgres';
+                $pass = '8678';
+                $db = "tornei";
+                $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
+                if (!$con) {
+                echo "Failed connecting to postgres database $database\n";
+                exit;
+                }
+
+
+                $result = pg_query($con, "SELECT name, country, city, date, category, image, description FROM cardstornei");
+                if (!$result) {
+                echo "An error occurred.\n";
+                exit;
+                }
+
+                while ($row = pg_fetch_row($result)) {
+                echo 
+                "<div class = 'card'>
+                    <div class = 'cardheader'>
+                        <div class = 'fill'>
+                        <img src='/img/millenium estoril.jpg' alt='Millennium Estoril Open' height = '250px' width='100%'>
+                        </div>
+                    </div>
+                    <div class = 'cardbody'>
+                        <div class = 'cardtitle'>
+                            <h2>$row[0]</h2>
+                        </div>
+                        <ul class = 'carddetails'>
+                            <li class = 'sap'><i class='fas fa-map-marker-alt'></i> $row[2], $row[1] </li> 
+                            <li class = 'sep'><i class='fas fa-calendar-alt'></i> $row[3]</li>
+                            <li><i class='fas fa-male'></i><i class='fas fa-female'></i> Categoria: $row[4]</li>
+                        </ul>
+                        <div class = 'action'>
+                            <a class='btn btn-block btn-default' onclick='viewPage()'>Visualizza</a> <!-- IL COMANDO 'viewPage()' SI TROVA IN card-sites/ -->
+                        </div>
+                    </div>
+                </div>";
+                }
+
+                pg_close($con);
+
+            ?>
+
+            </div>
+        </div>
     </div>
+
 </body>
-
-<div class = "list -four">
-
-
-<?php
-
-    $host = 'localhost';
-    $user = 'postgres';
-    $pass = '8678';
-    $db = "tornei";
-    $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
-    if (!$con) {
-    echo "Failed connecting to postgres database $database\n";
-    exit;
-    }
-
-
-    $result = pg_query($con, "SELECT name, country, city, date, category, image, description FROM cardstornei");
-    if (!$result) {
-    echo "An error occurred.\n";
-    exit;
-    }
-
-    while ($row = pg_fetch_row($result)) {
-    echo 
-    "<div class = 'card'>
-        <div class = 'cardheader'>
-            <div class = 'fill'>
-            <img src='/img/millenium estoril.jpg' alt='Millennium Estoril Open' height = '250px' width='100%'>
-            </div>
-        </div>
-        <div class = 'cardbody'>
-            <div class = 'cardtitle'>
-                <h2>$row[0]</h2>
-            </div>
-            <ul class = 'carddetails'>
-                <li class = 'sap'><i class='fas fa-map-marker-alt'></i> $row[2], $row[1] </li> 
-                <li class = 'sep'><i class='fas fa-calendar-alt'></i> $row[3]</li>
-                <li><i class='fas fa-male'></i><i class='fas fa-female'></i> Categoria: $row[4]</li>
-            </ul>
-            <div class = 'action'>
-                <a class='btn btn-block btn-default' onclick='viewPage()'>Visualizza</a> <!-- IL COMANDO 'viewPage()' SI TROVA IN card-sites/ -->
-            </div>
-        </div>
-    </div>";
-    }
-
-    pg_close($con);
-
-?>
+</html>
