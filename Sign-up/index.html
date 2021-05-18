@@ -39,45 +39,45 @@
           
           <form action="/Sign-up/singup.php" method="post">
           
-          <div class="top-row">
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  Nome<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" name="nome"/>
+              </div>
+          
+              <div class="field-wrap">
+                <label>
+                  Cognome<span class="req">*</span>
+                </label>
+                <input type="text"required autocomplete="off" name="cognome"/>
+              </div>
+            </div>
+
             <div class="field-wrap">
               <label>
-                Nome<span class="req">*</span>
+                Username<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" name="nome"/>
+              <input type="text"required autocomplete="off" name="username"/>
             </div>
-        
+
             <div class="field-wrap">
               <label>
-                Cognome<span class="req">*</span>
+                Email<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off" name="cognome"/>
+              <input type="email"required autocomplete="off" name="email"/>
             </div>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Username<span class="req">*</span>
-            </label>
-            <input type="text"required autocomplete="off" name="username"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Email<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off" name="email"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Imposta una Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off" name="password"/>
-          </div>
-          
-          <button type="submit" name="submit" id="submit" value="Submit" class="button button-block">Conferma</button>
-          
+            
+            <div class="field-wrap">
+              <label>
+                Imposta una Password<span class="req">*</span>
+              </label>
+              <input type="password"required autocomplete="off" name="password"/>
+            </div>
+            
+            <input type="submit" name="submit" id="submit" value="Conferma" class="button button-block"></input>
+            
           </form>
 
           <div id=serializearray>1234</div>  

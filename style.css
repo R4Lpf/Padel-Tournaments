@@ -11,6 +11,13 @@ body
     background-size: cover;
     background-attachment: fixed;
 }
+
+*{margin:0; padding:0;}    /* Ugly reset */
+html, body {
+  height:100%;
+  background: #22356d;        /* to fulfill page background */
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* INIZIO HEADER */
@@ -65,13 +72,17 @@ body
 
 .tab
 {
-    float: left;
+    position:absolute;
+    height:100%;
+    width:15%;
     /* border: 1px solid #ccc; */
     background-color: #22356d;
-    width: 15%;
+    height: max-content;
     height:inherit;
     
 }
+
+
 
 .tab button
 {
@@ -126,17 +137,28 @@ body
 
 .content
 {
-    float: left;
+
     /* padding: 0px 12px;
     border: 1px solid #ccc; */
-    width: 85%;
+    margin-left: 15%;
+    height: 100%;
     border-left: none;
     background: #ddd;
 }
 
+.tabcontent
+{
+ 
+    /* padding: 0px 12px;
+    border: 1px solid #ccc; */
+    background: #ddd;
+}
+
+
+
 .content_gioco
 {
-    float: left;
+
     /* padding: 0px 12px;
     border: 1px solid #ccc; */
     width: 100%;

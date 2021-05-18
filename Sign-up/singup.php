@@ -14,12 +14,12 @@
     $cognome = $_POST["cognome"];
     $username = $_POST["username"];
     $email = $_POST["email"];
-    $password = $_POST["passsword"];
+    $password = $_POST["password"];
 
 
-    $query = "INSERT INTO utenti (nome, cognome, username, email, password) VALUES ($nome, $cognome, $username, $email, $password)";
+    $query = "INSERT INTO utenti (name, surname, username, email, password) VALUES ('$nome', '$cognome', '$username', '$email', '$password')";
     $result = pg_query($con ,$query);
-    header("Location: /index.html");
+    header("Location: /card.php");
 
   }
   pg_close($con);
