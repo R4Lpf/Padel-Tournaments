@@ -114,32 +114,22 @@
 
                           <input type="submit" name="submit" id="submit" value="Submit" class="button button-block"></input>                
                     </form>
-                    Nome TORNEO
-                    Città e Paese
-                    Data
-                    Categoria
-
-                    <div id=serializearray>1234</div>  
-
-                    <span id="panel1Close" class= "close-button">
-                        <i class="far fa-window-close"></i>
-                    </span>
                 </div>
             </div>
 
             <script>
-                $('#panel1C').slideUp(100);
-                $('#panel1C').eq(1).slideDown(600);
+                $('#panel1C').slideToggle(100);
+                $('#panel1C').eq(1).slideToggle(600);
                 //for collapsing second part of an accordion
 
                 $('.tablinks').click(function() {//open
                 var takeID = $(this).attr('id');//takes id from clicked ele
-                $('#'+takeID+'C').slideDown(600);//show's clicked ele's id macthed div
+                $('#'+takeID+'C').slideToggle(600);//show's clicked ele's id macthed div
                 });
 
                 $('span').click(function() {//close
                 var takeID = $(this).attr('id').replace('Close','');//strip close from id
-                $('#'+takeID+'C').slideUp(600);//hide clicked close button's panel
+                $('#'+takeID+'C').slideToggle(600);//hide clicked close button's panel
                 });
 
                 $(function() {
