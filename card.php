@@ -304,166 +304,113 @@
         </div>
 
         <div id="Ranking" class="tabcontent">
-                <div class="list -two">
-                    
-                    
-                    <div class="wrapper">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>Giocatore</th>
-                            <th>Posizione</th>
-                            <th>Anni</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="posto"> <img src="https://www.worldpadeltour.com/media-content/2016/06/marcelo-capitani-MARCELO_CAPITANI-220x260.jpg"></td>
-                            <td class="giocatore">Marcello Capitani</td>
-                            <td class="punti">1</td>
-                            <td class="anni">46</td>
-                            
-                        </tr>
-                        <tr>
-                            <td class="posto"><img src="https://padelpaddle.com/wp-content/uploads/2018/02/padelpaddle-cremona-copertina.jpg"></td>
-                            <td class="giocatore">Simone Cremona</td>
-                            <td class="punti">2</td>
-                            <td class="anni">32</td>
-                            
-                        </tr>
-                        <tr>
-                            <td class="rank">3</td>
-                            <td class="team">Portugal</td>
-                            <td class="points">1245</td>
-                            <td class="up-down">0</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">4</td>
-                            <td class="team">Brazil</td>
-                            <td class="points">1210</td>
-                            <td class="up-down">+2</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">5</td>
-                            <td class="team">Colombia</td>
-                            <td class="points">1186</td>
-                            <td class="up-down">-1</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">6</td>
-                            <td class="team">Uruguay</td>
-                            <td class="points">1181</td>
-                            <td class="up-down">-1</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">7</td>
-                            <td class="team">Argentina</td>
-                            <td class="points">1178</td>
-                            <td class="up-down">-1</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">8</td>
-                            <td class="team">Switzerland</td>
-                            <td class="points">1161</td>
-                            <td class="up-down">0</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">9</td>
-                            <td class="team">Italy</td>
-                            <td class="points">1115</td>
-                            <td class="up-down">0</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">10</td>
-                            <td class="team">Greece</td>
-                            <td class="points">1082</td>
-                            <td class="up-down">0</td>
-                        </tr>
+            <div class="list -two">
+                
+                
+                <div class="wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th><i class="fas fa-award"></i></th>
+                        <th>Giocatore</th>
+                        <th></th>
+                        <th>Anni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="posizione"> 1</td>
+                        <td class="posto"> <img src="/img/giocatori/MARCELO_CAPITANI.jpg"></td>
+                        <td class="giocatore">Marcelo Capitani</td>
+                        <td class="anni">46</td>
                         
-                        </tbody>
-                    </table>
-                    </div>
-
-                    <div class="wrapper">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Posto</th>
-                            <th>Giocatore</th>
-                            <th>Punti</th>
-                            <th>Anni</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="posto">1</td>
-                            <td class="giocatore">Marcello Capitani</td>
-                            <td class="punti">1460</td>
-                            <td class="anni">46</td>
-                            
-                        </tr>
-                        <tr>
-                            <td class="posto">2</td>
-                            <td class="giocatore">Simone Cremona</td>
-                            <td class="punti">1340</td>
-                            <td class="anni">32</td>
-                            
-                        </tr>
-                        <tr>
-                            <td class="rank">3</td>
-                            <td class="team">Portugal</td>
-                            <td class="points">1245</td>
-                            <td class="up-down">0</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">4</td>
-                            <td class="team">Brazil</td>
-                            <td class="points">1210</td>
-                            <td class="up-down">+2</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">5</td>
-                            <td class="team">Colombia</td>
-                            <td class="points">1186</td>
-                            <td class="up-down">-1</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">6</td>
-                            <td class="team">Uruguay</td>
-                            <td class="points">1181</td>
-                            <td class="up-down">-1</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">7</td>
-                            <td class="team">Argentina</td>
-                            <td class="points">1178</td>
-                            <td class="up-down">-1</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">8</td>
-                            <td class="team">Switzerland</td>
-                            <td class="points">1161</td>
-                            <td class="up-down">0</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">9</td>
-                            <td class="team">Italy</td>
-                            <td class="points">1115</td>
-                            <td class="up-down">0</td>
-                        </tr>
-                        <tr>
-                            <td class="rank">10</td>
-                            <td class="team">Greece</td>
-                            <td class="points">1082</td>
-                            <td class="up-down">0</td>
-                        </tr>
+                      </tr>
+                      <tr>
+                        <td class="posizione">2</td>
+                        <td class="posto"><img src="/img/giocatori/simone-cremona.jpg"></td>
+                        <td class="giocatore">Simone Cremona</td>
+                        <td class="anni">32</td>
                         
-                        </tbody>
-                    </table>
-                    </div>
+                      </tr>
+                      <tr>
+                        <td class="posizione">3</td>
+                        <td class="posto"><img src="/img/giocatori/bruno-michele.png"></td>
+                        <td class="giocatore">Bruno Michele</td>
+                        <td class="anni">38</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">4</td>
+                        <td class="posto"><img src="/img/giocatori/lorenzo-Di-Giovanni.jpg"></td>
+                        <td class="giocatore">Di Giovanni Lorenzo</td>
+                        <td class="anni">38</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">5</td>
+                        <td class="posto"><img src="/img/giocatori/tinti-alessandro.webp"></td>
+                        <td class="giocatore">Tinti Alessandro</td>
+                        <td class="anni">29</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">6</td>
+                        <td class="posto"><img src="/img/giocatori/Fanti-emanuele.jpeg"></td>
+                        <td class="giocatore">Fanti Emanuele</td>
+                        <td class="anni">37</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-            
+
+                <div class="wrapper">
+                  <table>
+                      <thead>
+                        <tr>
+                          <th><i class="fas fa-award"></i></th>
+                          <th>Giocatore</th>
+                          <th></th>
+                          <th>Anni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td class="posizione">1</td>
+                        <td class="posto"><img src="/img/giocatori/chiara-pappacena.JPG"></td>
+                        <td class="giocatore">Pappacena Chiara</td>
+                        <td class="anni">26</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">2</td>
+                        <td class="posto"><img src="/img/giocatori/giulia-sussarello.webp"></td>
+                        <td class="giocatore">Sussarello Giulia</td>
+                        <td class="anni">28</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">3</td>
+                        <td class="posto"><img src="/img/giocatori/stellato-emily.jpg"></td>
+                        <td class="giocatore">Stellato Emily</td>
+                        <td class="anni">38</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">4</td>
+                        <td class="posto"><img src="/img/giocatori/orsi-carolina.jpg"></td>
+                        <td class="giocatore">Orsi Carolina</td>
+                        <td class="anni">29</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">5</td>
+                        <td class="posto"><img src="/img/giocatori/tommasi-valentina.webp"></td>
+                        <td class="giocatore">Tommasi Valentina</td>
+                        <td class="anni">24</td>
+                      </tr>
+                      <tr>
+                        <td class="posizione">6</td>
+                        <td class="posto"><img src="/img/giocatori/zanchetti-erika.PNG"></td>
+                        <td class="giocatore">Zanchetti Erika</td>
+                        <td class="anni">26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
         </div>
 
         <div id="My profile" class="tabcontent">
