@@ -15,7 +15,7 @@ body
 *{margin:0; padding:0;}    /* Ugly reset */
 html, body {
   height:100%;
-  background: #22356d;        /* to fulfill page background */
+  background:  white;        /* to fulfill page background */
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -33,8 +33,9 @@ html, body {
 .topnav
 {
     overflow: hidden;
-    background: #69dfe2;
-    padding: 20px 20px ;
+    background: #ffffff;
+    padding: 20px 0px 20px 0px ;
+    
     
 }
 
@@ -44,23 +45,24 @@ html, body {
     font-weight: bold;
     float: left;
     display: block;
-    padding: 14px 16px;
-    font-size: 16px;
+    padding: 14px 10px ;          
+    font-size: 23px;
+    transform: scale(.8, 1);
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
     color: #22356d;
+    
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    border-bottom: thick  solid  #69dfe2;
+    border-bottom: thick  solid  #ffffff;
     
 }
 
 .topnav a:hover
 {
     transition: 0.3s;
-  
     border-bottom: thick solid #22356d;
     
 }
@@ -76,7 +78,7 @@ html, body {
     height:100%;
     width:15%;
     /* border: 1px solid #ccc; */
-    background-color: #22356d;
+    background-color: #ffffff;
     height: max-content;
     height:inherit;
     
@@ -115,7 +117,7 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px; 
-    color: #ffffff;
+    color: #22356d;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -143,7 +145,7 @@ html, body {
     margin-left: 15%;
     height: 100%;
     border-left: none;
-    background: #ddd;
+    background: rgb(255, 255, 255);
 }
 
 .tabcontent
@@ -151,7 +153,7 @@ html, body {
  
     /* padding: 0px 12px;
     border: 1px solid #ccc; */
-    background: #ddd;
+    background: rgb(255, 255, 255);
 }
 
 
@@ -250,7 +252,7 @@ html, body {
 
 .card
 {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -526,3 +528,22 @@ td.posto img {
   height: 100px;
   width: 100px;
   }
+
+.content_scheda {
+
+display: grid;
+grid-gap: 24px 16px;
+  padding-top: 20px ;
+  padding-right: 50px;
+  padding-left: 20px;
+  grid-template-columns: 35% 65%;
+}
+
+.pasteHere {
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+
+}
+
+.pasteHere p{
+    font-size: larger;
+}

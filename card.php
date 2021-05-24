@@ -5,7 +5,7 @@
 <head>
     <link href="style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
     <title>Padel Tournaments</title>
-    <script src="https://kit.fontawesome.com/ad39549f21.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ad39549f21.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
 
 
     <div class = "header">
-            <h1><img class = "header-image" src= "img/31756.png" height="70" width="100"></h1>
+            <h1><img class = "header-image" src= "img/HEADER BIANCO.png" height="70" width="100"></h1>
     </div>
 
     
@@ -147,7 +147,7 @@
 
             <div>
               <h1>
-                Official Tournaments
+                <!-- Official Tournaments -->
               </h1>
             </div>
 
@@ -244,7 +244,7 @@
 
             <div>
               <h1>
-                Local Tournaments
+                <!-- Local Tournaments -->
               </h1>
             </div>
 
