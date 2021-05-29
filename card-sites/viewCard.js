@@ -8,3 +8,9 @@ function viewPage(){
     xmlhttp.open("GET","/card-sites/viewCard.php?content=" + content,true);
     xmlhttp.send();
 }
+
+function createPage() {
+    alert ("hello world");
+
+}
+

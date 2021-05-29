@@ -151,8 +151,7 @@
               <h1>
                 Official Tournaments
               </h1>
-            </div>
-
+         
             <div class = "list -four">
                 <div class = "card">
                     <div class = "cardheader">
@@ -170,7 +169,7 @@
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                          <button class="btn btn-block btn-default" data-modal-target="#modal">Visualizza</button>
                         </div>
                     </div>
                 </div>
@@ -240,7 +239,20 @@
                 </div>
 
                 
-
+                <script defer src="button.js"></script>
+                <button data-modal-target="#modal">Open Modal</button>
+                  <div class="modal" id="modal">
+                    <div class="modal-header">
+                      <div class="title">Example Modal</div>
+                      <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      prova di testo 
+                    </div>
+                  </div>
+                  <div id="overlay">
+                
+                  </div>
                            
             </div>
 

@@ -1,7 +1,7 @@
 <?php
   $host = 'localhost';
   $user = 'postgres';
-  $pass = '8678';
+  $pass = '0201';
   $db = 'tornei';
   $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
 

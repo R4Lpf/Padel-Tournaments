@@ -11,6 +11,7 @@
 </head>
 <body>
     <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
+    
 
 
     <div class = "header">
@@ -49,8 +50,11 @@
     
     <div class = "content">
 
+    
+     
         <div id="Tournaments" class="tabcontent">
-
+           
+        
             <div class = "create-tournament">
                 <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
                 <button class = "tablinks -p" id="panel1">
@@ -145,7 +149,24 @@
                               
             </script>
 
-            <div>
+<script defer src="button.js"></script>
+<button data-modal-target="#modal">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Example Modal</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      prova di testo 
+    </div>
+  </div>
+  <div id="overlay">
+
+  </div>
+            
+  
+  
+  <div>
               <h1>
                 <!-- Official Tournaments -->
               </h1>
@@ -168,7 +189,7 @@
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                          <button class="btn btn-block btn-default" data-modal-target="#modal">Visualizza</button>
                         </div>
                     </div>
                 </div>
@@ -188,8 +209,9 @@
                             <li class = "sep"><i class="fas fa-calendar-alt"></i> 02/05/2021</li>
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
+                
                         <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                            <a class="btn btn-block btn-default" onclick="createPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
                         </div>
                     </div>
                 </div>
@@ -216,26 +238,7 @@
                     </div>
                 </div>
 
-                <div class = "card">
-                    <div class = "cardheader">
-                        <div class="fill">
-                          <img src="/img/gonet geneva.jpg" alt="Gonet Geneva Open" height = "250px" width="100%">
-                        </div>
-                    </div>
-                    <div class = "cardbody">
-                        <div class = "cardtitle">
-                            <h2>Gonet Geneva Open</h2>
-                        </div>
-                        <ul class = "carddetails">
-                            <li class = "sap"><i class="fas fa-map-marker-alt"></i> Ginevra, Svizzera</li> 
-                            <li class = "sep"><i class="fas fa-calendar-alt"></i> 16/05/2021</li>
-                            <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
-                        </ul>
-                        <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
-                        </div>
-                    </div>
-                </div>
+                
 
                 
 
@@ -257,7 +260,7 @@
 
                     $host = 'localhost';
                     $user = 'postgres';
-                    $pass = '8678';
+                    $pass = '0201';
                     $db = "tornei";
                     $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
                     if (!$con) {
@@ -492,5 +495,6 @@
         <script src="/card-sites/viewCard.js"></script>
     </div>
     <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> -->
+    
 </body>
 </html>
