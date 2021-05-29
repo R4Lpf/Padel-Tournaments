@@ -483,26 +483,7 @@
                     </div>
                 </div>
 
-                <div class = "newscard">
-                    <div class = "cardheader">
-                        <div class="fill">
-                            <img src="https://palalocapadel.club/wp-content/uploads/2018/08/come-si-gioca-a-padel-400x250.jpg" alt="how to play">
-                        </div>
-                    </div>
-                    <div class = "cardbody">
-                        <div class = "newstitle">
-                            <h2>Come si gioca a padel</h2>
-                        </div>
-                        <div class = "paragraph">
-                            <p>
-                                Si parla già di vera e propria padel o paddle mania, il gioco molto simile al tennis che proviene dal Messico che sta facendo sempre più proseliti anche in Italia seppur con un certo ritardo rispetto ad altri paesi: i motivi sono presto spiegati, il successo di questo...                            
-                            </p>
-                        </div>
-                        <div class = "leggi-tutto">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
         </div>
