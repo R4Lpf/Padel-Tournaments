@@ -163,17 +163,26 @@ html, body {
 
     /* padding: 0px 12px;
     border: 1px solid #ccc; */
+    display: grid;
+    
     width: 100%;
     border-left: none;
-    background: #ddd;
+    background: rgb(255, 255, 255);
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
 
 .content_gioco p, .content_gioco h1
 {
    color: #101010; 
+   font-size: large;
 }
 
+.content_gioco img {
+    border-radius: 10px;
+
+}
 
 .list
 {   
@@ -574,6 +583,8 @@ grid-gap: 24px 16px;
     justify-content: space-between;
     align-items: center;
     color: white;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
     background-color: #22356d;
     border-bottom: 1px solid black;
   }
@@ -581,6 +592,9 @@ grid-gap: 24px 16px;
   .modal-header .title {
     font-size: 1.25rem;
     font-weight: bold;
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    
+
   }
   
   .modal-header .close-button {
@@ -594,6 +608,8 @@ grid-gap: 24px 16px;
   
   .modal-body {
     padding: 10px 15px;
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    font-size: large;
   }
   
   #overlay {

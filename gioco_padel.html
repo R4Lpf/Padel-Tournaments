@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang=it>
-<head>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Padel Tournaments</title>
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-    <script src="https://kit.fontawesome.com/ad39549f21.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>Padel Tournaments</title>
+        <script src="https://kit.fontawesome.com/ad39549f21.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    </head>
 <body>
     <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
 
     <div class = "header">
-            <h1><img class = "header-image" src= "img/31756.png" height="70" width="100"></h1>
+        <h1><img class = "header-image" src= "img/HEADER BIANCO.png" height="70" width="100"></h1>
     </div>
 
     <div class = "topnav">
@@ -23,16 +22,27 @@
     </div>
 
 
-
+<h1 align="center">Il gioco del padel</h1>
     <div class = "content_gioco">
 
-        <h1 align="center">Il gioco del padel</h1>
+        <div> </div>
+        <img src="/img/gioco_Padel.jpg " height="310" width="505" >
+        
         <div class="pasteHere">
-            <p align="center" id="fileTextHere">text from files/text.txt</p>
+            <p align="left" id="filetesto">text from files/text.txt</p>
         </div>
         <script>
-            $('#fileTextHere').load("/testi/il_gioco.txt");
+            $('#filetesto').load("/testi/il_gioco.txt");
         </script>
+        <div></div>
+        <div></div>
+        <div class="pasteHere">
+            <p align="left" id="filetesto"> prova </p>
+        </div>
+        <script>
+            $('#filetesto').load("/testi/regole.txt");
+        </script>
+        <img src="/img/Le-principali-regole-del-padel2.webp" height="310" width="505" >
         
     </div>
 

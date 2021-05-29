@@ -149,31 +149,54 @@
                               
             </script>
 
-<script defer src="button.js"></script>
-<button data-modal-target="#modal">Open Modal</button>
-  <div class="modal" id="modal">
+<script defer src="button.js"></script> <!--primo bottone-->
+
+  <div class="modal" id="modal"> <!--primo bottone--> <!--modificando l'id si possono creare ogni volta popup differenti-->
     <div class="modal-header">
-      <div class="title">Example Modal</div>
+      <div class="title"> Millennium Estoril Open </div>
       <button data-close-button class="close-button">&times;</button>
     </div>
     <div class="modal-body">
-      prova di testo 
+    Il Millennium Estoril Open , precedentemente noto anche come Portugal Open e Estoril Open, è un torneo di tennis che si svolge annualmente a Cascais. Il torneo maschile fa parte dell'ATP Tour 250, quello femminile è stato classificato come International.  
     </div>
   </div>
   <div id="overlay">
 
   </div>
-            
-  
-  
-  <div>
-              <h1>
-                <!-- Official Tournaments -->
-              </h1>
-            </div>
 
-            <div class = "list -four">
-                <div class = "card">
+ 
+
+  <div class="modal" id="modal1"> <!--secondo bottone-->
+    <div class="modal-header">
+      <div class="title"> Mutua Madrid Open </div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+    Il Mutua Madrid Open, conosciuto come Masters di Madrid, è un torneo di tennis sia maschile che femminile appartenente alle categorie 1000 e Premier che si svolge a Madrid. 
+    </div>
+  </div>
+  <div id="overlay">
+
+  </div>
+
+  <div class="modal" id="modal2"> <!--terzo bottone-->
+    <div class="modal-header">
+      <div class="title"> Internaz. BNL d'Italia </div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+    Gli Internazionali d'Italia sono il più importante torneo tennistico italiano in campo maschile e femminile. Fanno parte del circuito ATP World Tour Masters 1000, che raggruppa i 9 tornei più prestigiosi dopo i 4 del Grande Slam e le ATP Finals, e del circuito WTA 1000, che raggruppa i 9 tornei più prestigiosi dopo i 4 del Grande Slam e le WTA Finals.
+    Insieme al già citato Roland Garros, che segue, e al torneo di Monte Carlo, che precede, gli Internazionali d'Italia costituiscono il cosiddetto Slam Rosso, ovvero il trittico di tornei su terra rossa in sequenza, considerati come i più importanti al mondo su questa superficie, per tradizione. Esisteva un altro torneo Master Series su terra rossa, l'Hamburg Masters, che dal 2009 è stato sostituito dal Master Series di Madrid che è stato collocato due settimane prima dell'inizio del Roland Garros. 
+    </div>
+  </div>
+  <div id="overlay">
+
+  </div>
+
+  
+
+            <div class = "list -four"> <!--card tornei reali-->
+                <div class = "card"> <!--card1-->
                     <div class = "cardheader">
                         <div class = "fill">
                           <img src="/img/millenium estoril.jpg" alt="Millennium Estoril Open" height = "250px" width="100%">
@@ -189,12 +212,13 @@
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                          <button class="btn btn-block btn-default" data-modal-target="#modal">Visualizza</button>
+                          <button class="btn btn-block btn-default" data-modal-target="#modal">Visualizza Info</button>
                         </div>
                     </div>
                 </div>
 
-                <div class = "card">
+
+                <div class = "card"> <!--card2-->
                     <div class = "cardheader">
                         <div class = "fill">
                           <img src="/img/mutua opening madrid.jpg" alt="Mutua Madrid Open" height = "250px" width="100%">
@@ -211,13 +235,14 @@
                         </ul>
                 
                         <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="createPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                          <button class="btn btn-block btn-default" data-modal-target="#modal1">Visualizza Info</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class = "card">
+
+                <div class = "card"> <!--card3-->
                     <div class = "cardheader">
                         <div class="fill">
                           <img src="/img/internazionali bnl roma.jpg" alt="Internazionali BNL d'Italia" height = "250px" width="100%">
@@ -233,7 +258,7 @@
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                            <a class="btn btn-block btn-default" onclick="viewPage()">Visualizza</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                          <button class="btn btn-block btn-default" data-modal-target="#modal2">Visualizza Info</button>
                         </div>
                     </div>
                 </div>
@@ -245,16 +270,8 @@
                            
             </div>
 
-            <div>
-              <h1>
-                <!-- Local Tournaments -->
-              </h1>
-            </div>
 
-    
-
-
-            <div class = "list -php">
+            <div class = "list -php"> <!--card create dagli utenti tramite il bottone in cima alla pagina -->
 
                 <?php
 
@@ -306,7 +323,7 @@
             </div>
         </div>
 
-        <div id="Ranking" class="tabcontent">
+        <div id="Ranking" class="tabcontent"> <!--sezione a sinistra per le classifiche-->
             <div class="list -two">
                 
                 
@@ -416,12 +433,12 @@
               </div>
         </div>
 
-        <div id="My profile" class="tabcontent">
+        <div id="My profile" class="tabcontent"> <!--sezione a sinistra per il profilo-->
             <h2 align="center">Il tuo Profilo</h2>
             <p align="center">Devi aver effettuato il login per poter visualizzare le tue info.</p>
         </div>
 
-        <div id="News" class="tabcontent">
+        <div id="News" class="tabcontent"> <!--sezione a sinistra per le "notizie"-->
             <div class = "list -three">
 
                 <div class = "newscard">
@@ -494,7 +511,7 @@
         <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
         <script src="/card-sites/viewCard.js"></script>
     </div>
-    <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> -->
+    <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> PRIMO PARAGRAFO DI PROVA DEL SITO --> 
     
 </body>
 </html>
