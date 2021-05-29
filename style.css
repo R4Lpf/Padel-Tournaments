@@ -164,7 +164,8 @@ html, body {
     /* padding: 0px 12px;
     border: 1px solid #ccc; */
     display: grid;
-    
+    padding-top: 10px;
+    padding-bottom: 50px;
     width: 100%;
     border-left: none;
     background: rgb(255, 255, 255);
@@ -193,6 +194,39 @@ html, body {
 
 /* INIZIO TOURNAMENTS CONTENT */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.tablinks.-p  {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    
+    white-space: nowrap;
+    font-size: 14px;
+    
+    border-radius: 10px;
+    user-select: none;
+}
+
+.tablinks.-p  {
+    display: block;
+}
+
+.tablinks.-p  {
+    color: #fff;
+    background-color: #22356d;
+    
+}
+ 
+.tablinks.-p a  {
+    color: #fff;
+    background-color: #22356d;
+    
+}
 
 .create-tournament
 {
@@ -343,10 +377,6 @@ li {
     user-select: none;
 }
 
-.btn:not(.btn-link,.btn-outline-default) {
-    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 30%);
-}
-
 .btn-block {
     display: block;
 }
@@ -356,6 +386,11 @@ li {
     background-color: #22356d;
     border-color: #454d60;
 }
+.btn:not(.btn-link,.btn-outline-default) {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 30%);
+}
+
+
 
 /* FINE TOURNAMENTS CONTENT */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -540,20 +575,32 @@ td.posto img {
 
 .content_scheda {
 
-display: grid;
-grid-gap: 24px 16px;
-  padding-top: 20px ;
-  padding-right: 50px;
-  padding-left: 20px;
-  grid-template-columns: 35% 65%;
+    display: grid;
+    padding-top: 10px;
+    width: 100%;
+    border-left: none;
+    background: rgb(255, 255, 255);
+    grid-gap: 52px;
+    grid-template-columns: 15% 35% 35% 15%;
 }
 
-.pasteHere {
+.content_scheda p, .content_scheda h1
+{
+   color: #101010; 
+   font-size: large;
+}
+
+.content_scheda img {
+    border-radius: 10px;
+
+}
+
+.incolla_testo {
     font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
 
 }
 
-.pasteHere p{
+.incolla_testo p{
     font-size: larger;
 }
 
