@@ -214,6 +214,7 @@ html, body {
 
 .tablinks.-p  {
     display: block;
+    border-radius: 10px;
 }
 
 .tablinks.-p  {
@@ -259,7 +260,7 @@ html, body {
 
 .create-tournament:hover
 {
-    background-color: #ddd;
+    background-color: rgb(255, 255, 255);
 }
 
 .create-tournament.active
