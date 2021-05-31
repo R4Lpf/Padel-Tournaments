@@ -42,4 +42,7 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
     
   });
 
- 
+ function local_storage() {
+  var email = document.getElementById('username12').value;
+    sessionStorage.setItem('currentloggedin',email);
+ }

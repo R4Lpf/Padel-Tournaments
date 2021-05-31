@@ -122,13 +122,14 @@ html, body {
 }
 
 
-.tab button:hover
+.tab button a:hover
 {
     transition: 0.3s;
     border-bottom: thick solid #22356d;
+ 
 }
 
-.tab button.active
+.tab button a.active
 {
     transition: 0.3s;
     border-bottom: thick solid #22356d;
@@ -315,6 +316,7 @@ html, body {
 
 .cardtitle
 {
+    padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
 }

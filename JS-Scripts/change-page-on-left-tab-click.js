@@ -15,3 +15,24 @@ function openTab(evt, tabName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+$(document).ready(function(){
+  var username=sessionStorage.getItem("currentloggedin")
+  if (username!=null) {
+    document.querySelector('#logged').innerHTML = 'Log Out';  
+  }
+   
+  
+});
+
+function logged() {
+  if (document.querySelector('#logged').innerHTML == 'Log Out') {
+    console.log("entronell'if")
+    sessionStorage.clear()
+    window.location.href = "/card.php";
+  }
+  else {
+    console.log("entronell'else")
+    window.location.href = "/Sign-up/index.html";
+  }
+}

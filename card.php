@@ -22,7 +22,7 @@
 
     <div class = "topnav">
         <a href="/card.php">Padel Tournaments</a>
-        <a href="/Sign-up/index.html" style="float: right;">Sign Up</a>
+        <a href="javascript:logged()" style="float: right;" id="logged" >Log In</a>
         <a href= "gioco_padel.html" style="float: right;">Il Gioco</a> 
         <a href="card.php" style="float: right;">Homepage</a>  
     </div>
@@ -39,9 +39,9 @@
         <button class = "tablinks" onclick="openTab(event, 'Ranking')">
             <a> <i class="fas fa-medal"></i> Classifiche</a>
         </button>
-        <button class = "tablinks" onclick="openTab(event, 'My profile')">
+        <!-- <button class = "tablinks" onclick="openTab(event, 'My profile')">
             <a> <i class="fas fa-user"></i> Il mio profilo </a>
-        </button>
+        </button> -->
 
         <button class = "tablinks" onclick="openTab(event, 'News')">
             <a> <i class="fas fa-newspaper"></i> News </a>
@@ -277,7 +277,7 @@
 
                     $host = 'localhost';
                     $user = 'postgres';
-                    $pass = '8678';
+                    $pass = '0201';
                     $db = "tornei";
                     $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
                     if (!$con) {
@@ -449,11 +449,12 @@
               </div>
         </div>
 
-        <div id="My profile" class="tabcontent"> <!--sezione a sinistra per il profilo-->
+        <!-- 
+          <div id="My profile" class="tabcontent"> sezione a sinistra per il profilo
             <h2 align="center">Il tuo Profilo</h2>
             <p align="center">Devi aver effettuato il login per poter visualizzare le tue info.</p>
-        </div>
-
+        </div> 
+                    -->
         <div id="News" class="tabcontent"> <!--sezione a sinistra per le "notizie"-->
             <div class = "list -three">
 
@@ -490,8 +491,8 @@
                         </div>
                         <div class = "paragraph">
                             <p>
-                                Lo sport è un argomento che mette quasi sempre tuttti d’accordo. A patto che non si parli di calcio e di tifo. Lì, purtroppo, se le danno ancora di santa ragione. Per questo, in molti in Italia, si stanno piano piano avvinando ad universi alternativi. A sport,...  
-                            </p>
+                            Il padel (o paddle) lo si può considerare come un ibrido tra il tennis e lo squash, perché al suo interno porta le caratteristiche di entrambi. Nato negli Stati Uniti verso la fine dell’800, a partire dagli anni ’70 ha iniziato a prendere piede in tutto il mondo e solo negli ultimi tempi, anche in Italia.
+                          </p>
                         </div>
                         <div class = "leggi-tutto">
                             <a href="/card-sites/differenze.html" class="btn btn-block btn-default" onclick="viewPage()">Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
