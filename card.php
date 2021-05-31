@@ -212,7 +212,7 @@
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                          <button class="btn btn-block btn-default" data-modal-target="#modal">Visualizza Info</button>
+                          <a class="btn btn-block btn-default" data-modal-target="#modal">Visualizza Info</a>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                         </ul>
                 
                         <div class = "action">
-                          <button class="btn btn-block btn-default" data-modal-target="#modal1">Visualizza Info</button>
+                          <a class="btn btn-block btn-default" data-modal-target="#modal1">Visualizza Info</a>
                         </div>
                     </div>
                 </div>
@@ -258,7 +258,7 @@
                             <li><i class="fas fa-male"></i><i class="fas fa-female"></i> Categoria: Femminile e Maschile</li>
                         </ul>
                         <div class = "action">
-                          <button class="btn btn-block btn-default" data-modal-target="#modal2">Visualizza Info</button>
+                          <a class="btn btn-block btn-default" data-modal-target="#modal2">Visualizza Info</a>
                         </div>
                     </div>
                 </div>
@@ -291,8 +291,22 @@
                     echo "An error occurred.\n";
                     exit;
                     }
-
+                    
+                    $tmp = 3;
                     while ($row = pg_fetch_row($result)) {
+                    echo
+                      "<div class='modal' id='modal$tmp'>
+                        <div class='modal-header'>
+                          <div class='title'> $row[0] </div>
+                          <button data-close-button class='close-button'>&times;</button>
+                          </div>
+                          <div class='modal-body'>
+                          $row[6]
+                          </div>
+                          </div>
+                          <div id='overlay'>
+
+                        </div>";
                     echo 
                     "<div class = 'card'>
                         <div class = 'cardheader'>
@@ -310,11 +324,13 @@
                                 <li><i class='fas fa-male'></i><i class='fas fa-female'></i> Categoria: $row[4]</li>
                             </ul>
                             <div class = 'action'>
-                                <a class='btn btn-block btn-default' onclick='viewPage()'>Visualizza</a> <!-- IL COMANDO 'viewPage()' SI TROVA IN card-sites/ -->
+                                <a class='btn btn-block btn-default' data-modal-target='#modal$tmp'>Visualizza Info</a>
                             </div>
                         </div>
                     </div>";
+                     $tmp = $tmp +1;
                     }
+                   
 
                     pg_close($con);
 

@@ -26,8 +26,9 @@ body
 .topnav
 {
     overflow: hidden;
-    background: #69dfe2;
-    padding: 20px 20px ;
+    background: #ffffff;
+    padding: 20px 0px 20px 0px ;
+    
     
 }
 
@@ -37,23 +38,24 @@ body
     font-weight: bold;
     float: left;
     display: block;
-    padding: 14px 16px;
-    font-size: 16px;
+    padding: 14px 10px ;          
+    font-size: 23px;
+    transform: scale(.8, 1);
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
     color: #22356d;
+    
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-    border-bottom: thick  solid  #69dfe2;
+    border-bottom: thick  solid  #ffffff;
     
 }
 
 .topnav a:hover
 {
     transition: 0.3s;
-  
     border-bottom: thick solid #22356d;
     
 }
@@ -75,12 +77,10 @@ body
     color: #438f7b;
     transition: .5s ease;
   }
-  a:hover {
-    color: #438f7b;
-  }
+  
   
   .form {
-    background: #272a33;
+    background: #22356d;
     padding: 40px;
     max-width: 600px;
     margin: 40px auto;

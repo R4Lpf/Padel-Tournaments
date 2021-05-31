@@ -4,27 +4,22 @@
 <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Padel Tournaments</title>
-    <script src="https://kit.fontawesome.com/ad39549f21.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ad39549f21.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <meta charset="UTF-8">
-  <title>CodePen - Sign-Up/Login Form</title>
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
 <body>
 <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
 
     <div class = "header">
-            <h1><img class = "header-image" src= "/img/31756.png" height="70" width="100"></h1>
+      <h1><img class = "header-image" src= "/img/HEADER BIANCO.png" height="70" width="100"></h1>
     </div>
 
     <div class = "topnav">
-        <a href="/index.html">Padel Tournaments</a>
+        <a href="/card.php">Padel Tournaments</a>
         <a href="/Sign-up/index.html" style="float: right;">Sign up</a>
         <a href= "/gioco_padel.html" style="float: right;">Il gioco</a> 
-        <a href="/index.html" style="float: right;">Homepage</a>  
+        <a href="/card.php" style="float: right;">Homepage</a>  
     </div>
     
 <div class="form">
@@ -140,7 +135,7 @@
   
   $host = 'localhost';
   $user = 'postgres';
-  $pass = '8678';
+  $pass = '0201';
   $db = 'registrazioni';
   $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
 
