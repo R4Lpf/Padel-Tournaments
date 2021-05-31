@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang=it>
 <head>
@@ -53,7 +51,7 @@
     
      
         <div id="Tournaments" class="tabcontent">
-           
+        
         
             <div class = "create-tournament">
                 <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
@@ -61,14 +59,21 @@
                     <a onclick=""> Crea Torneo <i class="fas fa-plus"></i> </a>
                 </button>
                 <div class="CT-content" id="panel1C">
-
-                    <form action="create-tournament.php" method="post">
+                    
+                    <form action="create-tournament.php" method="post" enctype="multipart/form-data">
                         <div class="top-row">
                             <div class="field-wrap">
                               <label>
                                 Immagine <span class="req">*</span>
                               </label>
-                              <input type="file" accept="image/png, image/jpeg" required autocomplete="off" name="immagine" />
+                              <input type="file" accept="image/png, image/gif, image/jpeg" required autocomplete="off" name="immagine" id="immagine" onchange="loadFile(event)"/>
+                              <p><img id="output" width="200" /></p>  
+                              <script>
+                                var loadFile = function(event) {
+                                  var image = document.getElementById('output');
+                                  image.src = URL.createObjectURL(event.target.files[0]);
+                                };
+                              </script>
                             </div>
                             
                             <div class="field-wrap">
@@ -144,9 +149,15 @@
                     };
                     update();
                     $('form').change(update);
-                })
-
-                              
+                });           
+            </script>
+            <script>
+                 $(document).ready(funcion(){
+                  $('#submit').click(function(){
+                    var image_name = $('#immagine').val();
+                   
+                  })
+                });
             </script>
 
 <script defer src="button.js"></script> <!--primo bottone-->
@@ -285,8 +296,7 @@
                     exit;
                     }
 
-
-                    $result = pg_query($con, "SELECT name, country, city, date, category, image, description FROM cardstornei");
+                    $result = pg_query($con, "SELECT name, country, city, date, category, image, description, img_path FROM cardstornei");
                     if (!$result) {
                     echo "An error occurred.\n";
                     exit;
@@ -294,6 +304,7 @@
                     
                     $tmp = 3;
                     while ($row = pg_fetch_row($result)) {
+
                     echo
                       "<div class='modal' id='modal$tmp'>
                         <div class='modal-header'>
@@ -301,7 +312,7 @@
                           <button data-close-button class='close-button'>&times;</button>
                           </div>
                           <div class='modal-body'>
-                          $row[6]
+                          $row[5]
                           </div>
                           </div>
                           <div id='overlay'>
