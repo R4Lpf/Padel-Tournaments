@@ -12,7 +12,7 @@
 <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
 
     <div class = "header">
-      <h1><img class = "header-image" src= "/img/HEADER BIANCO.png" height="70" width="100"></h1>
+      <h1 style="margin-top: 0px;margin-bottom: 0px;"><img class = "header-image" src= "/img/HEADER BIANCO.png" height="70" width="100"></h1>
     </div>
 
     <div class = "topnav">
