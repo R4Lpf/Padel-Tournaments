@@ -68,7 +68,7 @@
                               <label>
                                 Immagine <span class="req">*</span>
                               </label>
-                              <input type="url" required autocomplete="off" name="immagine" />
+                              <input type="file" accept="image/png, image/jpeg" required autocomplete="off" name="immagine" />
                             </div>
                             
                             <div class="field-wrap">
@@ -277,7 +277,7 @@
 
                     $host = 'localhost';
                     $user = 'postgres';
-                    $pass = '0201';
+                    $pass = '8678';
                     $db = "tornei";
                     $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
                     if (!$con) {

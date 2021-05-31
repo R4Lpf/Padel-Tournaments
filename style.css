@@ -124,12 +124,14 @@ html, body {
 
 .tab button:hover
 {
-    background-color: #69dfe2;
+    transition: 0.3s;
+    border-bottom: thick solid #22356d;
 }
 
 .tab button.active
 {
-    background-color: #69dfe2;
+    transition: 0.3s;
+    border-bottom: thick solid #22356d;
 }
 
 /* FINE TAB A SINISTRA DELLA PAGINA */
