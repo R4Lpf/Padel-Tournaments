@@ -10,12 +10,13 @@ body
     margin: 0px;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 *{margin:0; padding:0;}    /* Ugly reset */
 html, body {
   height:100%;
-  background:  white;        /* to fulfill page background */
+  background:  rgb(255, 255, 255);        /* to fulfill page background */
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -26,7 +27,7 @@ html, body {
 {
     padding: 30px;
     text-align: center;
-    background: #22356d;
+    background: #242424;
 }
 
 
@@ -53,7 +54,7 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #22356d;
+    color: #242424;
     
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     border-bottom: thick  solid  #ffffff;
@@ -63,7 +64,7 @@ html, body {
 .topnav a:hover
 {
     transition: 0.3s;
-    border-bottom: thick solid #22356d;
+    border-bottom: thick solid #242424;
     
 }
 
@@ -117,22 +118,22 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px; 
-    color: #22356d;
+    color: #242424;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
 
-.tab button a:hover
+.tab button:hover
 {
     transition: 0.3s;
-    border-bottom: thick solid #22356d;
+    border-bottom: thick solid #242424;
  
 }
 
-.tab button a.active
+.tab button.active
 {
     transition: 0.3s;
-    border-bottom: thick solid #22356d;
+    border-bottom: thick solid #242424;
 }
 
 /* FINE TAB A SINISTRA DELLA PAGINA */
@@ -148,7 +149,7 @@ html, body {
     margin-left: 15%;
     height: 100%;
     border-left: none;
-    background: rgb(255, 255, 255);
+    background: beige;
 }
 
 .tabcontent
@@ -156,7 +157,7 @@ html, body {
  
     /* padding: 0px 12px;
     border: 1px solid #ccc; */
-    background: rgb(255, 255, 255);
+    background: beige;
 }
 
 
@@ -222,13 +223,13 @@ html, body {
 
 .tablinks.-p  {
     color: #fff;
-    background-color: #22356d;
+    background-color: #242424;
     
 }
  
 .tablinks.-p a  {
     color: #fff;
-    background-color: #22356d;
+    background-color: #242424;
     
 }
 
@@ -388,7 +389,7 @@ li {
 
 .btn-default {
     color: #fff;
-    background-color: #22356d;
+    background-color: #242424;
     border-color: #454d60;
 }
 .btn:not(.btn-link,.btn-outline-default) {
@@ -543,7 +544,7 @@ table {
 }
 
 th {
-  background-color: #22356d;
+  background-color: #242424;
   font-weight: bold;
   color: #fff;
   white-space: nowrap;
@@ -556,7 +557,7 @@ th {
 }
 
 tbody th {
-  background-color: #2ea879;
+  background-color: #242424;
 }
 tbody tr:nth-child(2n-1) {
   background-color: #f5f5f5;
@@ -637,7 +638,7 @@ td.posto img {
     color: white;
     border-top-left-radius: 10px ;
     border-top-right-radius: 10px ;
-    background-color: #22356d;
+    background-color: #242424;
     border-bottom: 1px solid black;
   }
   
@@ -680,3 +681,18 @@ td.posto img {
     opacity: 1;
     pointer-events: all;
   }
+
+  /* STILE DEL FORM PER L'AGGIUNTA DEI TORNEI LOCALI */
+  .CT-content  {
+      padding-top: 15px;
+      padding-left: 15px;
+      background-color: rgb(211,211,211);
+      margin-top: 10px;
+      border-radius: 20px;
+      width: 23.4%;
+      font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+
+

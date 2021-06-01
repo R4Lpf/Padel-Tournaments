@@ -76,21 +76,6 @@
             
           </form>
 
-          
-
-          <script>
-            $(function() {
-              var update = function() {
-                  $('#serializearray').text(        
-                      JSON.stringify($('form').serializeArray())
-                  );
-                };
-                update();
-                $('form').change(update);
-            })
-
-                          
-        </script>
         </div>
         
         <div id="login">   
@@ -112,7 +97,6 @@
             <input type="password"required autocomplete="off" name="password" id="password"/>
           </div>
           
-          <p class="forgot"><a href="#">Password Dimenticata?</a></p>
           
           <input onclick="local_storage()" type="submit" name="submit" id="submit" value="Accedi" class="button button-block"></input>
           

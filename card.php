@@ -53,7 +53,7 @@
         <div id="Tournaments" class="tabcontent">
         
         
-            <div class = "create-tournament" style= "display:none;" id=bottoneTorneo> <!-- BOTTONE PER CREARE IL TORNEO -->
+            <div class = "create-tournament" style= "display:block;" id=bottoneTorneo> <!-- BOTTONE PER CREARE IL TORNEO -->
                 <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
                 <button class = "tablinks -p" id="panel1">
                     <a onclick=""> Crea Torneo <i class="fas fa-plus"></i> </a>
@@ -63,10 +63,9 @@
                     <form action="create-tournament.php" method="post" enctype="multipart/form-data">
                         <div class="top-row">
                             <div class="field-wrap">
-                              <label>
-                                Immagine <span class="req">*</span>
-                              </label>
-                              <input type="file" accept="image/png, image/gif, image/jpeg" required autocomplete="off" name="immagine" id="immagine" onchange="loadFile(event)"/>
+                              
+                              <label for="immagine" class="btn btn-block btn-default" style=" width: 80px; padding-right: 10px"><i class="fas fa-image"></i> </label>
+                              <input style="visibility:hidden;" class= caricaFoto type="file" accept="image/png, image/gif, image/jpeg" required autocomplete="off" name="immagine" id="immagine" onchange="loadFile(event)"/>
                               <p><img id="output" width="200" /></p>  
                               <script>
                                 var loadFile = function(event) {
@@ -76,52 +75,56 @@
                               </script>
                             </div>
                             
-                            <div class="field-wrap">
-                              <label>
-                                Nome Torneo <span class="req">*</span>
-                              </label>
-                              <input type="text" required autocomplete="off" name="nome-torneo"/>
-                            </div>
-                        
-                            <div class="field-wrap">
-                              <label>
-                                Paese <span class="req">*</span>
-                              </label>
-                              <input type="text"required autocomplete="off" name="paese"/>
-                            </div>
-                          </div>
-                
-                          <div class="field-wrap">
+                          
+                            <div class="list -two">
+                                    <label>
+                                      Nome Torneo <span class="req"> *</span>
+                                    </label>
+                                    <input type="text" required autocomplete="off" name="nome-torneo"/>
+                                  </div>
+                              
+                                  <div class="list -two">
+                                    <label>
+                                      Paese <span class="req"> *</span>
+                                    </label>
+                                    <input type="text"required autocomplete="off" name="paese"/>
+                                  </div>
+                                </div>
+                      
+                                <div class="list -two">
+                                  <label>
+                                    Città<span class="req"> *</span>
+                                  </label>
+                                  <input type="text"required autocomplete="off" name="città"/>
+                                </div>
+                      
+                                <div class="list -two">
+                                  <label>
+                                    Data<span class="req"> *</span>
+                                  </label>
+                                  <input type="date" required autocomplete="off" name="data"/>
+                                </div>
+                         
+                          
+                          <div class="field-wrap" style="padding-left:40px; padding-top: 20px;">
                             <label>
-                              Città<span class="req">*</span>
+                              Categoria<span class="req"> *</span>
                             </label>
-                            <input type="text"required autocomplete="off" name="città"/>
-                          </div>
-                
-                          <div class="field-wrap">
-                            <label>
-                              Data<span class="req">*</span>
-                            </label>
-                            <input type="date" required autocomplete="off" name="data"/>
+                            <div class="list -two">
+                            <input type="radio" name="categoria" value="Femminile">Femminile
+                            <input type="radio" name="categoria" value="Maschile">Maschile
+                            <input type="radio" name="categoria" value="Femminile e Maschile">Femminile e Maschile
+                            </div>
                           </div>
                           
-                          <div class="field-wrap">
-                            <label>
-                              Categoria<span class="req">*</span>
-                            </label>
-                            <input type="radio" name="categoria" value="female">Femminile
-                            <input type="radio" name="categoria" value="male">Maschile
-                            <input type="radio" name="categoria" value="other">Femminile e Maschile
-                          </div>
-                          
-                          <div class="field-wrap">
+                          <div class="list -two">
                             <label>
                               Descrizione <span class="req"></span>
                             </label>
                             <input type="text" name="descrizione"/>
                           </div>
-
-                          <input type="submit" name="submit" id="submit" value="Submit" class="button button-block"></input>                
+                          <label for="submit" class="btn btn-block btn-default" style=" width: 80px; padding-right: 10px; margin-top: 20px;"><i class="fas fa-check"></i> </label>
+                          <input  style="visibility:hidden" type="submit" name="submit" id="submit" value="Submit"></input>                
                     </form>
                 </div>
             </div>
