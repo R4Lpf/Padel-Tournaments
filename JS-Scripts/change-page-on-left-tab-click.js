@@ -19,14 +19,15 @@ document.getElementById("defaultOpen").click();
 $(document).ready(function(){
   var username=sessionStorage.getItem("currentloggedin")
   if (username!=null) {
-    document.querySelector('#logged').innerHTML = 'Log Out';  
+    document.querySelector('#logged').innerHTML = 'Log Out';
+    document.querySelector('#bottoneTorneo').style.display = "block";
   }
    
   
 });
 
 function logged() {
-  if (document.querySelector('#logged').innerHTML == 'Log Out') {
+  if (document.querySelector('#logged').innerHTML == 'Log Out') { //SE PREMO IL TASTO LOGOUT
     console.log("entronell'if")
     sessionStorage.clear()
     window.location.href = "/card.php";

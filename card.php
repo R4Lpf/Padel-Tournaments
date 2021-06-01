@@ -53,7 +53,7 @@
         <div id="Tournaments" class="tabcontent">
         
         
-            <div class = "create-tournament">
+            <div class = "create-tournament" style= "display:none;" id=bottoneTorneo> <!-- BOTTONE PER CREARE IL TORNEO -->
                 <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
                 <button class = "tablinks -p" id="panel1">
                     <a onclick=""> Crea Torneo <i class="fas fa-plus"></i> </a>
@@ -312,7 +312,7 @@
                           <button data-close-button class='close-button'>&times;</button>
                           </div>
                           <div class='modal-body'>
-                          $row[5]
+                          $row[6]
                           </div>
                           </div>
                           <div id='overlay'>
