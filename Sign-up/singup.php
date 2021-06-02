@@ -3,7 +3,7 @@
   
   $host = 'localhost';
   $user = 'postgres';
-  $pass = '8678';
+  $pass = '0201';
   $db = 'registrazioni';
   $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
 
@@ -18,24 +18,22 @@
     $password = $_POST["password"];
 
 
-    $q1 = "SELECT * FROM utenti where email = $1 and password = $2";
+    // la query controlla se l'utente è già registrato o meno al sito
+    $q1 = "SELECT * FROM utenti where email = $1 and password = $2"; 
     $result = pg_query_params($con, $q1, array($email, $password));
 
-    if (!($line = pg_fetch_array($result, null, PGSQL_ASSOC) and true)){
+    if (!($line = pg_fetch_array($result, null, PGSQL_ASSOC) and true)){ //se non è ancora registrato inserisce i dati nel database
 
       $query = "INSERT INTO utenti (name, surname, username, email, password) VALUES ('$nome', '$cognome', '$username', '$email', '$password')";
       $result = pg_query($con ,$query);
       
-      echo '<script type="text/javascript">{
-        alert("Registrazione effettuata con successo");
-      }</script>';
-
       header("Location: /card.php"); 
     }
 
-    else{
+    else{ //se l'utente è gia registrato lo riporta sulla pagina della registrazione
 
       header("Location: /Sign-up/index.html");
+      echo "<script>alert('Questo utente è gia registrato');</script>";
       exit;
 
     }
