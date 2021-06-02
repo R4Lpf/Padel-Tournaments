@@ -149,7 +149,7 @@ html, body {
     margin-left: 15%;
     height: 100%;
     border-left: none;
-    background: beige;
+    background: white;
 }
 
 .tabcontent
@@ -157,7 +157,7 @@ html, body {
  
     /* padding: 0px 12px;
     border: 1px solid #ccc; */
-    background: beige;
+    background: white;
 }
 
 
@@ -193,7 +193,7 @@ html, body {
 {   
     
     display: grid;
-    grid-gap: 24px 16px;
+    grid-gap: 24px 20px;
 }
 
 /* INIZIO TOURNAMENTS CONTENT */
@@ -300,7 +300,8 @@ html, body {
 
 .card
 {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
+    box-shadow: 0 4px 6px 4px rgba(19, 35, 47, 0.5);
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -417,9 +418,15 @@ li {
 
 .newscard
 {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
+    box-shadow: 0 4px 6px 4px rgba(19, 35, 47, 0.5);
     margin-top: 20px;
     border-radius: 20px;
+
+}
+
+.leggi-tutto{
+    margin: 20px;
 }
 
 .fill
@@ -474,52 +481,7 @@ li {
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1500px) {
-    .tab, .content {
-        width: 100%;
-        padding: 0;
-    }
-  }
-@media screen and (max-width: 1500px) {
-.tab {
-    width: 100%;
-    height: auto;
-    padding: 0;
-}
-}
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
-  }
-  @media screen and (max-width: 1500px) {
-    .list.-four {
-        float: none;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        padding-right: 100px;
-    }
-  }
 
-  @media screen and (max-width: 1000px) {
-    .list.-four {
-        float: none;
-        width: 100%;
-        grid-template-columns: 1fr ;
-        padding-right: 100px;
-    }
-  }
-
-  @media screen and (max-width: 1500px) {
-    .list.-three {
-        float: none;
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding-right: 100px;
-    }
-  }
 
 /* questi sono gli stili copiati per la classifica*/
 
@@ -533,14 +495,15 @@ li {
 
 .wrapper {
   line-height: 1.5em;
- 
+  box-shadow: 0 4px 6px 4px rgba(19, 35, 47, 0.5);
 
 }
 
+
 table {
   border-collapse: collapse;
-  
   background: #fff;
+  
 }
 
 th {
@@ -562,9 +525,6 @@ tbody th {
 tbody tr:nth-child(2n-1) {
   background-color: #f5f5f5;
   transition: all 0.125s ease-in-out;
-}
-tbody tr:hover {
-  background-color: rgba(50, 98, 149, 0.3);
 }
 
 td.posto {
@@ -686,7 +646,8 @@ td.posto img {
   .CT-content  {
       padding-top: 15px;
       padding-left: 15px;
-      background-color: rgb(211,211,211);
+      background-color: white;
+      box-shadow: 0 4px 6px 4px rgba(19, 35, 47, 0.5);
       margin-top: 10px;
       border-radius: 20px;
       width: 23.4%;
@@ -695,4 +656,198 @@ td.posto img {
       text-transform: uppercase;
 }
 
+/* FORM CREA TORNEO INSIDE */
 
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 22px;
+  }
+
+label .req {
+margin: 2px;
+color: #242424;
+}
+
+label.active {
+transform: translateY(50px);
+left: 2px;
+font-size: 14px;
+}
+
+label.active .req {
+opacity: 0;
+}
+
+label.highlight {
+color: #ffffff;
+}
+
+input, textarea{
+font-size: 22px;
+display: block;
+width: 90%;
+height: 100%;
+padding: 5px 10px;
+background: none;
+background-image: none;
+border: 1px solid #242424;
+color: #242424;
+border-radius: 0;
+transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+label {
+color: #242424;
+touch-action: manipulation;
+cursor: pointer;
+}
+
+input:focus, textarea:focus {
+outline: 0;
+border-color: #242424;
+}
+
+textarea {
+border: 2px solid #242424;
+resize: vertical;
+  }
+  
+.field-wrap{
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+@media screen and (max-width: 1900px) {
+    .content_gioco{
+        margin-left: 25%;
+        margin-right: 25%;
+        display: block;
+        width: 50%;
+    }
+    .incolla_testo{
+        margin-bottom: 40px;
+    }
+    .il_gioco_img 
+    {
+        height: auto;
+        width: 800px;
+        margin-bottom: 40px;
+    }
+    .list.-four{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .list.-php{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .il_gioco_img 
+    {
+        height: auto;
+        width: 600px;
+        margin-bottom: 40px;
+    }
+    .list.-four{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .list.-php{
+        grid-template-columns: 1fr 1fr ;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .list.-four{
+        grid-template-columns: 1fr ;
+    }
+    .list.-php{
+        grid-template-columns: 1fr ;
+    }
+  }
+
+  
+
+  @media screen and (max-width: 1000px) {
+    .tab .content{
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+    .il_gioco_img
+    {
+        height: auto;
+        width: 400px;
+        margin-bottom: 40px;
+    }
+    .list.-four{
+        grid-template-columns: 1fr ;
+    }
+    .list.-php{
+        grid-template-columns: 1fr ;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .tab{
+        position: relative;
+        width: 100%;
+        height: 30%;
+        padding: 0;
+    }
+    .content{
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-right: 30%;
+    }
+
+  }
+
+
+/* @media screen and (max-width: 1500px) {
+.tab {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+}
+  Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other 
+  @media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .list.-four {
+        float: none;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        padding-right: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .list.-four {
+        float: none;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        padding-right: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .list.-three {
+        float: none;
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding-right: 100px;
+    }
+  } */

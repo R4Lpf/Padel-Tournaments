@@ -63,9 +63,8 @@
                     <form action="create-tournament.php" method="post" enctype="multipart/form-data">
                         <div class="top-row">
                             <div class="field-wrap">
-                              
-                              <label for="immagine" class="btn btn-block btn-default" style=" width: 80px; padding-right: 10px"><i class="fas fa-image"></i> </label>
-                              <input style="visibility:hidden;" class= caricaFoto type="file" accept="image/png, image/gif, image/jpeg" required autocomplete="off" name="immagine" id="immagine" onchange="loadFile(event)"/>
+                            
+                              <input class= caricaFoto type="file" accept="image/png, image/gif, image/jpeg" required autocomplete="off" name="immagine" id="immagine" onchange="loadFile(event)"/>
                               <p><img id="output" width="200" /></p>  
                               <script>
                                 var loadFile = function(event) {
@@ -76,55 +75,57 @@
                             </div>
                             
                           
-                            <div class="list -two">
-                                    <label>
-                                      Nome Torneo <span class="req"> *</span>
-                                    </label>
-                                    <input type="text" required autocomplete="off" name="nome-torneo"/>
-                                  </div>
+                            <div class="field-wrap">
+                              <label>
+                                Nome Torneo <span class="req"> *</span>
+                              </label>
+                              <input type="text" required autocomplete="off" name="nome-torneo"/>
+                            </div>
                               
-                                  <div class="list -two">
-                                    <label>
-                                      Paese <span class="req"> *</span>
-                                    </label>
-                                    <input type="text"required autocomplete="off" name="paese"/>
-                                  </div>
-                                </div>
-                      
-                                <div class="list -two">
-                                  <label>
-                                    Città<span class="req"> *</span>
-                                  </label>
-                                  <input type="text"required autocomplete="off" name="città"/>
-                                </div>
-                      
-                                <div class="list -two">
-                                  <label>
-                                    Data<span class="req"> *</span>
-                                  </label>
-                                  <input type="date" required autocomplete="off" name="data"/>
-                                </div>
+                            <div class="field-wrap">
+                              <label>
+                                Paese <span class="req"> *</span>
+                              </label>
+                              <input type="text"required autocomplete="off" name="paese"/>
+                            </div>
+                          </div>
+                
+                          <div class="field-wrap">
+                            <label>
+                              Città<span class="req"> *</span>
+                            </label>
+                            <input type="text"required autocomplete="off" name="città"/>
+                          </div>
+                
+                          <div class="field-wrap">
+                            <label>
+                              <span class="req"></span>
+                            </label>
+                            <input type="date" required autocomplete="off" name="data"/>
+                          </div>
                          
                           
                           <div class="field-wrap" style="padding-left:40px; padding-top: 20px;">
                             <label>
                               Categoria<span class="req"> *</span>
                             </label>
-                            <div class="list -two">
+                            <div class="list -two" style="grid-gap: 10px;">
                             <input type="radio" name="categoria" value="Femminile">Femminile
                             <input type="radio" name="categoria" value="Maschile">Maschile
-                            <input type="radio" name="categoria" value="Femminile e Maschile">Femminile e Maschile
+                            <input type="radio" name="categoria" value="Misto">Misto
                             </div>
                           </div>
                           
-                          <div class="list -two">
+                          <div class="field-wrap">
                             <label>
                               Descrizione <span class="req"></span>
                             </label>
                             <input type="text" name="descrizione"/>
                           </div>
-                          <label for="submit" class="btn btn-block btn-default" style=" width: 80px; padding-right: 10px; margin-top: 20px;"><i class="fas fa-check"></i> </label>
-                          <input  style="visibility:hidden" type="submit" name="submit" id="submit" value="Submit"></input>                
+
+                          <div class="field-wrap">
+                            <input class="btn btn-block btn-default" type="submit" name="submit" id="submit" value="CONFERMA " style="margin-left:15px; margin-bottom:15px; margin-right:15px;"></input>           
+                          </div>     
                     </form>
                 </div>
             </div>
@@ -291,7 +292,7 @@
 
                     $host = 'localhost';
                     $user = 'postgres';
-                    $pass = '0201';
+                    $pass = '8678';
                     $db = "tornei";
                     $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
                     if (!$con) {
@@ -322,7 +323,7 @@
 
                         </div>";
                     echo 
-                    "<div class = 'card'>
+                    "<div class = 'card' style= 'display:block;' id = 'card$tmp'>
                         <div class = 'cardheader'>
                             <div class = 'fill'>
                             <img src= '$row[5]' height = '250px' width='100%'>
@@ -337,8 +338,11 @@
                                 <li class = 'sep'><i class='fas fa-calendar-alt'></i> $row[3]</li>
                                 <li><i class='fas fa-male'></i><i class='fas fa-female'></i> Categoria: $row[4]</li>
                             </ul>
-                            <div class = 'action'>
-                                <a class='btn btn-block btn-default' data-modal-target='#modal$tmp'>Visualizza Info</a>
+                            <div class = 'list -buttons'>
+                              <div class = 'action'>
+                                  <a class='btn btn-block btn-default' data-modal-target='#modal$tmp'>Visualizza Info</a>
+                              </div>
+                              
                             </div>
                         </div>
                     </div>";
@@ -352,10 +356,15 @@
 
             </div>
         </div>
+        <script>
+
+        </script>
+        
 
         <div id="Ranking" class="tabcontent"> <!--sezione a sinistra per le classifiche-->
-            <div class="list -two">
+            <div class="list -four">
                 
+                <div></div>
                 
                 <div class="wrapper">
                   <table>
@@ -460,6 +469,8 @@
                     </tbody>
                   </table>
                 </div>
+
+                <div></div>
               </div>
         </div>
 
@@ -488,7 +499,7 @@
                             </p>
                         </div>
                         <div class = "leggi-tutto">
-                            <a href="/card-sites/storiadelpadel.html" class="btn btn-block btn-default" onclick="viewPage()">Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                            <a href="/card-sites/storiadelpadel.html" class="btn btn-block btn-default" >Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
                         </div>
                     </div>
                 </div>
@@ -501,7 +512,7 @@
                     </div>
                     <div class = "cardbody">
                         <div class = "newstitle">
-                            <h2>DIFFERENZE TRA PADEL, TENNIS E SQUASH</h2>
+                            <h2>DIFFERENZE SOSTANZIALI TRA PADEL, TENNIS E SQUASH</h2>
                         </div>
                         <div class = "paragraph">
                             <p>
@@ -509,7 +520,7 @@
                           </p>
                         </div>
                         <div class = "leggi-tutto">
-                            <a href="/card-sites/differenze.html" class="btn btn-block btn-default" onclick="viewPage()">Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
+                            <a href="/card-sites/differenze.html" class="btn btn-block btn-default" >Leggi tutto</a> <!-- IL COMANDO "viewPage()" SI TROVA IN card-sites/ -->
                         </div>
                     </div>
                 </div>
@@ -524,6 +535,9 @@
         <script src="/card-sites/viewCard.js"></script>
     </div>
     <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> PRIMO PARAGRAFO DI PROVA DEL SITO --> 
-    
+   
+
+
 </body>
+
 </html>
