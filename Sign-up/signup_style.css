@@ -84,16 +84,18 @@ body
     padding: 40px;
     max-width: 600px;
     margin: 40px auto;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
     border-color: #242424;
     border: 1px solid;
   }
-  
+
+ 
   .tab-group {
     list-style: none;
     padding: 0;
     margin: 0 0 40px 0;
+    
   }
   .tab-group:after {
     content: "";
@@ -112,10 +114,12 @@ body
     text-align: center;
     cursor: pointer;
     transition: .5s ease;
+
   }
   .tab-group li a:hover {
     background: #242424;
     color: #ffffff;
+
   }
   .tab-group .active a {
     background: #242424;
@@ -220,6 +224,7 @@ body
     color: #ffffff;
     transition: all 0.5s ease;
     -webkit-appearance: none;
+    border-radius: 15px;
   }
   .button:hover, .button:focus {
     background: #242424;
@@ -228,6 +233,7 @@ body
   .button-block {
     display: block;
     width: 100%;
+    border-radius: 15px;
   }
   
   .forgot {

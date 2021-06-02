@@ -53,7 +53,7 @@
         <div id="Tournaments" class="tabcontent">
         
         
-            <div class = "create-tournament" style= "display:block;" id=bottoneTorneo> <!-- BOTTONE PER CREARE IL TORNEO -->
+            <div class = "create-tournament" style= "display:none;" id=bottoneTorneo> <!-- BOTTONE PER CREARE IL TORNEO -->
                 <!-- PUOI CREARE UN TORNEO SOLO SE SEI REGISTRATO -->
                 <button class = "tablinks -p" id="panel1">
                     <a onclick=""> Crea Torneo <i class="fas fa-plus"></i> </a>
@@ -164,7 +164,7 @@
                 });
             </script>
 
-<script defer src="button.js"></script> <!--primo bottone-->
+<script defer src="/JS-Scipts/button.js"></script> <!--primo bottone-->
 
   <div class="modal" id="modal"> <!--primo bottone--> <!--modificando l'id si possono creare ogni volta popup differenti-->
     <div class="modal-header">
@@ -292,7 +292,7 @@
 
                     $host = 'localhost';
                     $user = 'postgres';
-                    $pass = '8678';
+                    $pass = '0201';
                     $db = "tornei";
                     $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
                     if (!$con) {

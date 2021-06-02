@@ -1,5 +1,5 @@
 <?php
-     $dbconn = pg_connect("host=localhost port=5432 dbname=registrazioni user=postgres password=8678") or die("Could not connect: " . pg_last_error());
+     $dbconn = pg_connect("host=localhost port=5432 dbname=registrazioni user=postgres password=0201") or die("Could not connect: " . pg_last_error());
 
      $username = $_POST["username"];
      $password = $_POST["password"];

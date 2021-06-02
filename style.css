@@ -27,7 +27,7 @@ html, body {
 {
     padding: 30px;
     text-align: center;
-    background: #242424;
+    background: #22356d;
 }
 
 
@@ -54,7 +54,7 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #242424;
+    color: #22356d;
     
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     border-bottom: thick  solid  #ffffff;
@@ -64,7 +64,7 @@ html, body {
 .topnav a:hover
 {
     transition: 0.3s;
-    border-bottom: thick solid #242424;
+    border-bottom: thick solid #22356d;
     
 }
 
@@ -118,7 +118,7 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px; 
-    color: #242424;
+    color: #22356d;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -126,14 +126,14 @@ html, body {
 .tab button:hover
 {
     transition: 0.3s;
-    border-bottom: thick solid #242424;
+    border-bottom: thick solid #22356d;
  
 }
 
 .tab button.active
 {
     transition: 0.3s;
-    border-bottom: thick solid #242424;
+    border-bottom: thick solid #22356d;
 }
 
 /* FINE TAB A SINISTRA DELLA PAGINA */
@@ -223,13 +223,13 @@ html, body {
 
 .tablinks.-p  {
     color: #fff;
-    background-color: #242424;
+    background-color: #22356d;
     
 }
  
 .tablinks.-p a  {
     color: #fff;
-    background-color: #242424;
+    background-color: #22356d;
     
 }
 
