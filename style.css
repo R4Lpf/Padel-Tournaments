@@ -36,6 +36,7 @@ html, body {
     overflow: hidden;
     background: #ffffff;
     padding: 20px 0px 20px 0px ;
+    border-bottom: thick solid #22356d;
     
     
 }
@@ -723,6 +724,11 @@ resize: vertical;
   }
 
 @media screen and (max-width: 1900px) {
+    .CT-content
+    {
+        width: 30%;
+    }
+
     .content_gioco{
         margin-left: 25%;
         margin-right: 25%;
@@ -747,6 +753,10 @@ resize: vertical;
 }
 
 @media screen and (max-width: 1500px) {
+    .CT-content
+    {
+        width: 50%;
+    }
     .il_gioco_img 
     {
         height: auto;
@@ -795,6 +805,10 @@ resize: vertical;
         width: 100%;
         padding: 0;
     }
+    .CT-content
+    {
+        width: 100%;
+    }
     .il_gioco_img
     {
         height: auto;
@@ -825,6 +839,7 @@ resize: vertical;
     }
 
   }
+
 
 
 /* @media screen and (max-width: 1500px) {
