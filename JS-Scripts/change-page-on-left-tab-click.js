@@ -1,4 +1,4 @@
-
+//SIMILMENTE AL LOGIN ANCHE QUI QUESTO SERVE PER I LABEL DEL FORM
 $('.CT-content').find('input, textarea').on('keyup blur focus', function (e) {
   
   var $this = $(this),
@@ -28,6 +28,7 @@ $('.CT-content').find('input, textarea').on('keyup blur focus', function (e) {
 
 });
 
+//FUNZIONE CHE SERVE A CAMBIARE IL CONTENT A DESTRA DELLA PAGINA PER TAB CLICCATO
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -47,7 +48,7 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpen").click();
 
 
-
+//CONTROLLO PER VEDERE SE L'UTENTE è LOGGATO
 $(document).ready(function(){
   var username=sessionStorage.getItem("currentloggedin")
   if (username!=null) {
@@ -57,7 +58,8 @@ $(document).ready(function(){
    
   
 });
-//da qui sono loggato
+//da qui sono loggato e controlla cosa succede quando l'utente clicca log out.
+
 function logged() {
   if (document.querySelector('#logged').innerHTML == 'Log Out') { //premo logout
     sessionStorage.clear()

@@ -30,6 +30,8 @@
         <?php include "style.css" ?>
     </style>
 
+    <!-- TAB IN CUI CAMBIA TABLINKS A SECONDA DI QUALE VIENE CLICCATO -->
+
     <div class = "tab" >
         <button class = "tablinks" onclick="openTab(event, 'Tournaments')" id="defaultOpen">
             <a> <i class="fas fa-trophy"></i> Tornei </a>
@@ -42,9 +44,11 @@
         </button> -->
 
         <button class = "tablinks" onclick="openTab(event, 'News')">
-            <a> <i class="fas fa-newspaper"></i> News </a>
+            <a> <i class="fas fa-newspaper"></i> Curiosità </a>
         </button>
     </div>
+
+    <!-- CONTENUTO PER OGNI TAB -->
     
     <div class = "content">
 
@@ -164,7 +168,9 @@
                 });
             </script>
 
-<script defer src="/JS-Scipts/button.js"></script> <!--primo bottone-->
+
+
+<script defer src="/JS-Scripts/button.js"></script> <!--primo bottone-->
 
   <div class="modal" id="modal"> <!--primo bottone--> <!--modificando l'id si possono creare ogni volta popup differenti-->
     <div class="modal-header">
@@ -179,7 +185,6 @@
 
   </div>
 
- 
 
   <div class="modal" id="modal1"> <!--secondo bottone-->
     <div class="modal-header">
@@ -207,8 +212,8 @@
   <div id="overlay">
 
   </div>
-
-  
+                
+            <!-- TORNEI UFFICIALI -->
 
             <div class = "list -four"> <!--card tornei reali-->
                 <div class = "card"> <!--card1-->
@@ -285,14 +290,20 @@
                            
             </div>
 
+            <div style = "margin-top:40px; margin-left:40px;" id="scritta_tl">
+            <h1>
+            TORNEI LOCALI
+            </h1>
+            </div>
 
+            <!-- TORNEI LOCALI -->
             <div class = "list -php"> <!--card create dagli utenti tramite il bottone in cima alla pagina -->
 
                 <?php
 
                     $host = 'localhost';
                     $user = 'postgres';
-                    $pass = '0201';
+                    $pass = '8678';
                     $db = "tornei";
                     $con = pg_connect("host=$host dbname=$db user=$user password=$pass") or die ("Could not connect to Server \n");
                     if (!$con) {
@@ -532,12 +543,12 @@
             
 
         <script src="/JS-Scripts/change-page-on-left-tab-click.js"></script>
-        <script src="/card-sites/viewCard.js"></script>
     </div>
     <!-- <p align="center">Questo sito è stato progettato per la gestione e la visualizzazione di informazioni sui tornei di padel</p> PRIMO PARAGRAFO DI PROVA DEL SITO --> 
    
 
 
 </body>
+
 
 </html>

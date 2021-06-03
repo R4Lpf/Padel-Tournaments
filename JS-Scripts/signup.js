@@ -1,3 +1,6 @@
+
+//SPOSTA LE SCRITTE DEI LABEL NEI FORM UNA VOLTA CHE VENGONO COMPILATI
+
 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
     var $this = $(this),
@@ -27,6 +30,9 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
   });
   
+
+//  CAMBIA IL TAB ATTIVO DA REGISTRAZIONE AD ACCEDI E VICEVERSA
+
   $('.tab a').on('click', function (e) {
     
     e.preventDefault();
@@ -42,6 +48,8 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
     
   });
 
+  
+// SALVA IN LOCAL STORAGE L'USERNAME DELL'UTENTE APPENA LOGGATO
  function local_storage() {
   var user = document.getElementById('username12').value;
     sessionStorage.setItem('currentloggedin',user);

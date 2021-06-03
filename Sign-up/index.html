@@ -22,7 +22,10 @@
         <a href="/card.php" style="float: right;">Homepage</a>  
     </div>
     
-<div class="form">
+
+
+<div class="form"> 
+  <!-- INIZIO FORM DI REGISTRAZIONE E LOGIN -->
       
       <ul class="tab-group">
         <li class="tab active"><a href="#signup">Registrati</a></li>
@@ -30,10 +33,10 @@
       </ul>
       
       <div class="tab-content">
+          <!-- INIZIO FORM DI REGISTRAZIONE -->
         <div id="signup">   
           <h1>Completa i campi</h1>
-          
-          <form action="/Sign-up/singup.php" method="post"  id="sign_upForm">
+          <form action="/Sign-up/singup.php" method="post"  id="sign_upForm"> 
           
             <div class="top-row">
               <div class="field-wrap">
@@ -77,6 +80,8 @@
           </form>
 
         </div>
+
+          <!-- INIZIO FORM DI LOGIN -->
         
         <div id="login">   
           <h1>Bentornato!</h1>
@@ -97,7 +102,7 @@
             <input type="password"required autocomplete="off" name="password" id="password"/>
           </div>
           
-          
+          <!-- CARICAMENTO DEL L'USER NEL LOCALSTORAGE (vedi signup.js) -->
           <input onclick="local_storage()" type="submit" name="submit" id="submit" value="Accedi" class="button button-block"></input>
           
           </form>
